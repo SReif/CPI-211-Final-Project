@@ -5,25 +5,57 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void moveScene()
+    public static bool paused = false;
+
+    void Update()
     {
-        if(SceneManager.GetActiveScene().buildIndex >= SceneManager.sceneCountInBuildSettings - 1)
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(0);
+            if(paused)
+            {
+                Resume();
+            }
+
+            else
+            {
+                Pause();
+            }
         }
-        else
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
-        
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void Play()
     {
-        Debug.Log("I'm Triggered!");
-        Debug.Log("Current Scene: " + SceneManager.GetActiveScene().buildIndex);
-        Debug.Log("Total Scenes: " + SceneManager.sceneCountInBuildSettings);
-        moveScene();
+        SceneManager.LoadScene("SampleScene");
     }
 
+    public void Options()
+    {
+        SceneManager.LoadScene("OptionScene");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void Pause()
+    {
+            SceneManager.LoadScene("PauseScene", LoadSceneMode.Additive);
+            Time.timeScale = 0.0f;
+            paused = true;
+    }
+
+    public void Resume()
+    {
+        SceneManager.UnloadSceneAsync("PauseScene");
+        Time.timeScale = 1.0f;
+        paused = false;
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("StartScene");
+        Time.timeScale = 1.0f;
+        paused = false;
+    }
 }
