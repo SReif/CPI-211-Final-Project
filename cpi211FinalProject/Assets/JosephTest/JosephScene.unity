@@ -377,7 +377,8 @@ PrefabInstance:
       propertyPath: CannonBall
       value: 
       objectReference: {fileID: 8296172668949524870}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8437767209909165690, guid: 4c337c733d9704d9084dc6ffffd330b8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4c337c733d9704d9084dc6ffffd330b8, type: 3}
 --- !u!1 &1562490360
 GameObject:

@@ -27,9 +27,6 @@ public class CannonShoot : MonoBehaviour
     void Fire()
     {
         GameObject instBullet = Instantiate(CannonBall, CannonEmitter.position,CannonEmitter.transform.rotation) as GameObject;
-
-        //CannonBall.transform.position += transform.forward * cannonSpeed * Time.deltaTime;
-
         instBullet.GetComponent<Rigidbody>().AddForce(CannonEmitter.transform.up * cannonSpeed);
 
     }
