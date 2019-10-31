@@ -7,7 +7,8 @@ public class CannonShoot : MonoBehaviour
     public Transform CannonEmitter;
     public GameObject CannonBall;
     public float cannonSpeed = 1000;
-    public float shotDelay = 100;
+    public float shotTime = 120;
+    private float shotDelay = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class CannonShoot : MonoBehaviour
     void Update()
     {
         shotDelay--;
-       if(shotDelay % 100 == 0)
+       if(shotDelay % shotTime == 0)
         {
             Fire(); 
         }
