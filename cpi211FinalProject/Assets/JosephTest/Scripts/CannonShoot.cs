@@ -19,7 +19,7 @@ public class CannonShoot : MonoBehaviour
     void Update()
     {
         shotDelay--;
-       if(shotDelay % 80 == 0)
+       if(shotDelay % 100 == 0)
         {
             Fire(); 
         }
@@ -28,6 +28,7 @@ public class CannonShoot : MonoBehaviour
     {
         GameObject instBullet = Instantiate(CannonBall, CannonEmitter.position,CannonEmitter.transform.rotation) as GameObject;
         instBullet.GetComponent<Rigidbody>().AddForce(CannonEmitter.transform.up * cannonSpeed);
+        Destroy(instBullet, 5);
 
     }
 }
