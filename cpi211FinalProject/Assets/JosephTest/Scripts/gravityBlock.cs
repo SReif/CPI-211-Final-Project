@@ -5,14 +5,10 @@ using UnityEngine;
 public class gravityBlock : MonoBehaviour
 {
     //public float gravitySpeed = 15f;
-    public float movementSpeed = 300f;
+    public float movementSpeed = 600f;
     public GameObject self;
 
-    bool up = false;
-    bool down = false;
-    bool left = false;
-    bool right = false;
-    bool terrain = false;
+    bool moving = false;
 
     void Start()
     {
@@ -23,40 +19,39 @@ public class gravityBlock : MonoBehaviour
     void Update()
     {
 
-        if (up == false && down == false && left == false && right == false)
-
+        if (moving == false)
+        {
             if (Input.GetKey("w"))  //move up
             {
-                up = true;
+                moving = true;
                 self.GetComponent<Rigidbody>().AddForce(self.transform.up * movementSpeed);
             }
             if (Input.GetKey("a"))  //move left
             {
-                left = true;
+                moving = true;
                 self.GetComponent<Rigidbody>().AddForce(-self.transform.forward * movementSpeed);
             }
             if (Input.GetKey("s")) //move down
             {
-                down = true;
+                moving = true;
                 self.GetComponent<Rigidbody>().AddForce(-self.transform.up * movementSpeed);
             }
             if (Input.GetKey("d"))  //move right
             {
-                right = true;
+                moving = true;
                 self.GetComponent<Rigidbody>().AddForce(self.transform.forward * movementSpeed);
             }
+        }
         
     }
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "wall")
         {
-            up = false;
-            down = false;
-            left = false;
-            right = false;
+            moving = false;
 
-            self.GetComponent<Rigidbody>().AddForce(self.transform.forward * 0);
+           //self.GetComponent<Rigidbody>().AddForce(self.transform.forward * 0);
+           //self.GetComponent<Rigidbody>().AddForce(self.transform.right * 0);
 
             Debug.Log("hit wall");
 
