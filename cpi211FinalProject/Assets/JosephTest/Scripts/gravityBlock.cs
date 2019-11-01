@@ -9,6 +9,10 @@ public class gravityBlock : MonoBehaviour
     public GameObject self;
 
     bool moving = false;
+    bool up = false;
+    bool down = false;
+    bool left = false;
+    bool right = false;
 
     void Start()
     {
@@ -21,24 +25,48 @@ public class gravityBlock : MonoBehaviour
 
         if (moving == false)
         {
-            if (Input.GetKey("w"))  //move up
+            if (Input.GetKey("w") && up == false)  //move up
             {
                 moving = true;
+
+                up = true;
+                down = false;
+                left = false;
+                right = false;
+
                 self.GetComponent<Rigidbody>().AddForce(self.transform.up * movementSpeed);
             }
-            if (Input.GetKey("a"))  //move left
+            if (Input.GetKey("a") && left == false)  //move left
             {
                 moving = true;
+
+                up = false;
+                down = false;
+                left = true;
+                right = false;
+
                 self.GetComponent<Rigidbody>().AddForce(-self.transform.forward * movementSpeed);
             }
-            if (Input.GetKey("s")) //move down
+            if (Input.GetKey("s") && down == false) //move down
             {
                 moving = true;
+
+                up = false;
+                down = true;
+                left = false;
+                right = false;
+
                 self.GetComponent<Rigidbody>().AddForce(-self.transform.up * movementSpeed);
             }
-            if (Input.GetKey("d"))  //move right
+            if (Input.GetKey("d") && right == false)  //move right
             {
                 moving = true;
+
+                up = false;
+                down = false;
+                left = false;
+                right = true;
+
                 self.GetComponent<Rigidbody>().AddForce(self.transform.forward * movementSpeed);
             }
         }
@@ -49,10 +77,6 @@ public class gravityBlock : MonoBehaviour
         if (collision.gameObject.tag == "wall")
         {
             moving = false;
-
-           //self.GetComponent<Rigidbody>().AddForce(self.transform.forward * 0);
-           //self.GetComponent<Rigidbody>().AddForce(self.transform.right * 0);
-
             Debug.Log("hit wall");
 
 
