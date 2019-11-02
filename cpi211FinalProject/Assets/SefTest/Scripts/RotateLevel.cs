@@ -4,71 +4,122 @@ using UnityEngine;
 
 public class RotateLevel : MonoBehaviour
 {
-    public float speed = 30.0f;
-    private Vector3 endRotation;
-    private bool rotateX, rotateY, isRotating;
+    public float counter;
+    public float angle = 90f;
+    public float speed = 0.5f;
+
+    private Vector3 rotateAngles;
+
+    private bool rotateLeft, rotateRight, rotateUp, rotateDown;
+    public bool isRotating;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        counter = angle / speed;
     }
 
     // Update is called once per frame
     void Update()
-    { 
-        if(isRotating == false)
+    {
+        if (Input.GetKeyDown("j") && isRotating == false)
         {
-            if (Input.GetKeyDown("j"))
+            rotateLeft = true;
+            isRotating = true;
+        }
+
+        if (Input.GetKeyDown("l") && isRotating == false)
+        {
+            rotateRight = true;
+            isRotating = true;
+        }
+
+        if (Input.GetKeyDown("i") && isRotating == false)
+        {
+            rotateUp = true;
+            isRotating = true;
+        }
+
+        if (Input.GetKeyDown("k") && isRotating == false)
+        {
+            rotateDown = true;
+            isRotating = true;
+        }
+
+        Rotate();
+    }
+
+    void Rotate()
+    {
+        if (rotateLeft == true)
+        {
+            rotateAngles = new Vector3(0f, speed, 0f);
+
+            if (counter > 0)
             {
-                endRotation.y = transform.eulerAngles.y + 90f;
-                rotateY = true;
-                isRotating = true;
+                transform.Rotate(rotateAngles, Space.World);
+                counter--;
             }
 
-            if (Input.GetKeyDown("l"))
+            else
             {
-                endRotation.y = transform.eulerAngles.y - 90f;
-                rotateY = true;
-                isRotating = true;
-            }
-
-            if (Input.GetKeyDown("i"))
-            {
-                endRotation.x = transform.eulerAngles.x + 90f;
-                rotateX = true;
-                isRotating = true;
-            }
-
-            if (Input.GetKeyDown("k"))
-            {
-                endRotation.x = transform.eulerAngles.x - 90f;
-                rotateX = true;
-                isRotating = true;
+                isRotating = false;
+                rotateLeft = false;
+                counter = angle / speed;
             }
         }
 
-        if(rotateX)
+        if (rotateRight == true)
         {
-            float angleX = Mathf.MoveTowardsAngle(transform.eulerAngles.x, endRotation.x, speed * Time.deltaTime);
-            transform.eulerAngles = new Vector3(angleX, transform.eulerAngles.y, transform.eulerAngles.z);
+            rotateAngles = new Vector3(0f, -speed, 0f);
 
-            if(transform.eulerAngles.x == endRotation.x)
+            if (counter > 0)
             {
-                rotateX = false;
+                transform.Rotate(rotateAngles, Space.World);
+                counter--;
+            }
+
+            else
+            {
                 isRotating = false;
+                rotateRight = false;
+                counter = angle / speed;
             }
         }
 
-        if(rotateY)
+        if (rotateDown == true)
         {
-            float angleY = Mathf.MoveTowardsAngle(transform.eulerAngles.y, endRotation.y, speed * Time.deltaTime);
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, angleY, transform.eulerAngles.z);
+            rotateAngles = new Vector3(-speed, 0f, 0f);
 
-            if (transform.eulerAngles.y == endRotation.y)
+            if (counter > 0)
             {
-                rotateY = false;
+                transform.Rotate(rotateAngles, Space.World);
+                counter--;
+            }
+
+            else
+            {
                 isRotating = false;
+                rotateDown = false;
+                counter = angle / speed;
+            }
+        }
+
+        if (rotateUp == true)
+        {
+            rotateAngles = new Vector3(speed, 0f, 0f);
+
+            if (counter > 0)
+            {
+                transform.Rotate(rotateAngles, Space.World);
+                counter--;
+            }
+
+            else
+            {
+                isRotating = false;
+                rotateUp = false;
+                counter = angle / speed;
             }
         }
     }
