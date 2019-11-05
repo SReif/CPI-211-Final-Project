@@ -69,4 +69,29 @@ public class RotatePlayer : MonoBehaviour
             transform.Rotate(targetRotation);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Entered " + other);
+
+        if (other.name == "BlueCube")
+        {
+            Debug.Log("Blue");
+        }
+
+        if (other.name == "OrangeCube")
+        {
+            Debug.Log("Orange");
+        }
+
+        if (other.name == "PurpleCube")
+        {
+            Debug.Log("Purple");
+        }
+
+        if (other.name == "YellowCube")
+        {
+            Debug.Log("Yellow");
+        }
+    }
 }

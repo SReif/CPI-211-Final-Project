@@ -22,28 +22,40 @@ public class RotateLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("j") && isRotating == false)
+        if (Input.GetKeyDown("j"))
         {
-            rotateLeft = true;
-            isRotating = true;
+            if(isRotating == false)
+            {
+                rotateLeft = true;
+                isRotating = true;
+            }
         }
 
-        if (Input.GetKeyDown("l") && isRotating == false)
+        if (Input.GetKeyDown("l"))
         {
-            rotateRight = true;
-            isRotating = true;
+            if (isRotating == false)
+            {
+                rotateRight = true;
+                isRotating = true;
+            }
         }
 
-        if (Input.GetKeyDown("i") && isRotating == false)
+        if (Input.GetKeyDown("i"))
         {
-            rotateUp = true;
-            isRotating = true;
+            if (isRotating == false)
+            {
+                rotateUp = true;
+                isRotating = true;
+            }
         }
 
-        if (Input.GetKeyDown("k") && isRotating == false)
+        if (Input.GetKeyDown("k"))
         {
-            rotateDown = true;
-            isRotating = true;
+            if (isRotating == false)
+            {
+                rotateDown = true;
+                isRotating = true;
+            }
         }
 
         Rotate();
