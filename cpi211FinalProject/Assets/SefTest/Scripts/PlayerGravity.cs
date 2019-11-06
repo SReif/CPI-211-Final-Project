@@ -14,7 +14,7 @@ public class PlayerGravity : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Tab))
         {
             Physics.gravity *= -1;
             gravityChanged = true;

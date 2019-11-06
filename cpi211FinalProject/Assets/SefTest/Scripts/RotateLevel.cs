@@ -8,9 +8,11 @@ public class RotateLevel : MonoBehaviour
     public float angle = 90f;
     public float speed = 0.5f;
 
+    public RotatePlayer rotatePlayer;
+
     private Vector3 rotateAngles;
 
-    private bool rotateLeft, rotateRight, rotateUp, rotateDown;
+    public bool rotateLeft, rotateRight, rotateUp, rotateDown;
     public bool isRotating;
 
     // Start is called before the first frame update

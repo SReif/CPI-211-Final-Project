@@ -9,6 +9,7 @@ public class RotatePlayer : MonoBehaviour
 
     public RotateLevel rotateLevel;
     public PlayerGravity playerGravity;
+    public bool interacting;
 
     public GameObject environment;
     void Start()
@@ -20,16 +21,19 @@ public class RotatePlayer : MonoBehaviour
     {
         GravityChanged();
 
+        /*
         if (rotateLevel.isRotating == true)
         {
             Parent(environment, transform.gameObject);
             Rotate();
         }
 
+        
         else
         {
-            UnParent();
+           UnParent();
         }
+        */
         
     }
 
@@ -42,6 +46,7 @@ public class RotatePlayer : MonoBehaviour
     {
         transform.parent = null;
     }
+ 
 
     void Rotate()
     {
@@ -70,28 +75,58 @@ public class RotatePlayer : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         Debug.Log("Entered " + other);
 
-        if (other.name == "BlueCube")
+        if (other.name == "BlueCube" && interacting == false)
         {
             Debug.Log("Blue");
+            if(rotateLevel.isRotating == false && Input.GetKeyDown("f"))
+            {
+                interacting = true;
+                rotateLevel.rotateLeft = true;
+                rotateLevel.isRotating = true;
+            }
         }
 
-        if (other.name == "OrangeCube")
+        if (other.name == "OrangeCube" && interacting == false)
         {
             Debug.Log("Orange");
+            if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
+            {
+                interacting = true;
+                rotateLevel.rotateRight = true;
+                rotateLevel.isRotating = true;
+            }
+
         }
 
-        if (other.name == "PurpleCube")
+        if (other.name == "PurpleCube" && interacting == false)
         {
             Debug.Log("Purple");
+            if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
+            {
+                interacting = true;
+                rotateLevel.rotateUp = true;
+                rotateLevel.isRotating = true;
+            }
         }
 
-        if (other.name == "YellowCube")
+        if (other.name == "YellowCube" && interacting == false)
         {
             Debug.Log("Yellow");
+            if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
+            {
+                interacting = true;
+                rotateLevel.rotateDown = true;
+                rotateLevel.isRotating = true;
+            }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        interacting = false;
     }
 }

@@ -5,7 +5,10 @@ using UnityEngine;
 public class TestMove : MonoBehaviour
 {
     Rigidbody rb;
-    public float speed = 1.0f;
+    public float moveSpeed = 1.0f;
+    public float jumpForce = 5.5f;
+    public Vector3 movement;
+    public bool isGrounded, isMoving;
 
     // Start is called before the first frame update
     void Start()
@@ -16,33 +19,50 @@ public class TestMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey("w"))
-        {
-            rb.velocity = transform.forward * speed;
-            rb.freezeRotation = true;
-        }
+        movement.x = Input.GetAxis("Horizontal");
+        movement.z = Input.GetAxis("Vertical");
 
-        else if (Input.GetKey("a"))
+        if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
-            rb.velocity = transform.right * -speed;
-            rb.freezeRotation = true;
-        }
-
-        else if (Input.GetKey("s"))
-        {
-            rb.velocity = transform.forward * -speed;
-            rb.freezeRotation = true;
-        }
-
-        else if (Input.GetKey("d"))
-        {
-            rb.velocity = transform.right * speed;
-            rb.freezeRotation = true;
+            isMoving = true;
         }
 
         else
         {
-            rb.freezeRotation = false;
+            isMoving = false;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        if(isMoving == true)
+        {
+            transform.rotation = Quaternion.LookRotation(movement);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
+        {
+            rb.velocity = transform.up * jumpForce;
+            rb.freezeRotation = true;
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        Debug.Log("Collided with " + collision.gameObject.tag);
+        if(collision.gameObject.tag == "environment")
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "environment")
+        {
+            isGrounded = false;
         }
     }
 }
