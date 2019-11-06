@@ -5,7 +5,7 @@ using UnityEngine;
 public class gravityBlock : MonoBehaviour
 {
     //public float gravitySpeed = 15f;
-    public float movementSpeed = 600f;
+    public float movementSpeed = 300;
     public GameObject self;
 
     bool moving = false;
@@ -25,7 +25,7 @@ public class gravityBlock : MonoBehaviour
 
         if (moving == false)
         {
-            if (Input.GetKey("w") && up == false)  //move up
+            if (Input.GetKey("k") && up == false)  //move up
             {
                 moving = true;
 
@@ -36,7 +36,7 @@ public class gravityBlock : MonoBehaviour
 
                 self.GetComponent<Rigidbody>().AddForce(self.transform.up * movementSpeed);
             }
-            if (Input.GetKey("a") && left == false)  //move left
+            if (Input.GetKey("j") && left == false)  //move left
             {
                 moving = true;
 
@@ -47,7 +47,7 @@ public class gravityBlock : MonoBehaviour
 
                 self.GetComponent<Rigidbody>().AddForce(-self.transform.forward * movementSpeed);
             }
-            if (Input.GetKey("s") && down == false) //move down
+            if (Input.GetKey("i") && down == false) //move down
             {
                 moving = true;
 
@@ -56,9 +56,9 @@ public class gravityBlock : MonoBehaviour
                 left = false;
                 right = false;
 
-                self.GetComponent<Rigidbody>().AddForce(-self.transform.up * movementSpeed);
+                self.GetComponent<Rigidbody>().AddForce(-self.transform.right * movementSpeed);
             }
-            if (Input.GetKey("d") && right == false)  //move right
+            if (Input.GetKey("l") && right == false)  //move right
             {
                 moving = true;
 
