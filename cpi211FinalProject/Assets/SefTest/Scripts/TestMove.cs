@@ -25,6 +25,7 @@ public class TestMove : MonoBehaviour
         if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             isMoving = true;
+            Debug.Log("Trying to Move");
         }
 
         else
@@ -51,8 +52,8 @@ public class TestMove : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        Debug.Log("Collided with " + collision.gameObject.tag);
-        if(collision.gameObject.tag == "environment")
+        //Debug.Log("Collided with " + collision.gameObject.tag);
+        if(collision.gameObject.tag == "environment" || collision.gameObject.tag == "non rotating environment")
         {
             isGrounded = true;
         }
@@ -60,7 +61,7 @@ public class TestMove : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "environment")
+        if (collision.gameObject.tag == "environment" || collision.gameObject.tag == "non rotating environment")
         {
             isGrounded = false;
         }

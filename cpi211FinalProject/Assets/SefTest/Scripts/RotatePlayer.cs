@@ -11,6 +11,8 @@ public class RotatePlayer : MonoBehaviour
     public PlayerGravity playerGravity;
     public bool interacting;
 
+    private bool canParent = false;
+
     public GameObject environment;
     void Start()
     {
@@ -21,8 +23,8 @@ public class RotatePlayer : MonoBehaviour
     {
         GravityChanged();
 
-        /*
-        if (rotateLevel.isRotating == true)
+        
+        if (rotateLevel.isRotating == true && canParent)
         {
             Parent(environment, transform.gameObject);
             Rotate();
@@ -33,7 +35,6 @@ public class RotatePlayer : MonoBehaviour
         {
            UnParent();
         }
-        */
         
     }
 
@@ -128,5 +129,21 @@ public class RotatePlayer : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         interacting = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag == "environment")
+        {
+            canParent = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.tag == "environment")
+        {
+            canParent = false;
+        }
     }
 }
