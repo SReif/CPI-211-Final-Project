@@ -15,10 +15,13 @@ public class RotateLevel : MonoBehaviour
     public bool rotateLeft, rotateRight, rotateUp, rotateDown;
     public bool isRotating;
 
+    public InteractableInteraction interactionDetect;
+
     // Start is called before the first frame update
     void Start()
     {
         counter = angle / speed;
+        interactionDetect = GameObject.FindGameObjectWithTag("Player").GetComponent<InteractableInteraction>();
     }
 
     // Update is called once per frame
@@ -42,7 +45,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("i"))
+        if (Input.GetKeyDown("i") || interactionDetect.rotateUp)
         {
             if (isRotating == false)
             {

@@ -6,6 +6,10 @@ TagManager:
   tags:
   - wall
   - environment
+  - OrangeCube
+  - BlueCube
+  - PurpleCube
+  - YellowCube
   layers:
   - Default
   - TransparentFX

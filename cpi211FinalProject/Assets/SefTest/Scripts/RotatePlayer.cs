@@ -91,7 +91,7 @@ public class RotatePlayer : MonoBehaviour
             }
         }
 
-        if (other.name == "OrangeCube" && interacting == false)
+        if (other.tag == "OrangeCube" && interacting == false)
         {
             Debug.Log("Orange");
             if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
