@@ -27,7 +27,7 @@ public class RotateLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("j"))
+        if (Input.GetKeyDown("j") || interactionDetect.rotateLeft)
         {
             if(isRotating == false)
             {
@@ -36,7 +36,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("l"))
+        if (Input.GetKeyDown("l") || interactionDetect.rotateRight)
         {
             if (isRotating == false)
             {
@@ -54,7 +54,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("k"))
+        if (Input.GetKeyDown("k") || interactionDetect.rotateDown)
         {
             if (isRotating == false)
             {

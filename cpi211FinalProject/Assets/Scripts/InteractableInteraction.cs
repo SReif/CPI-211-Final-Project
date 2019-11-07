@@ -25,12 +25,36 @@ public class InteractableInteraction : MonoBehaviour
         {
             rotateUp = true;
         }
+        else if(other.tag == "BlueCube")
+        {
+            rotateDown = true;
+        }
+        else if(other.tag == "PurpleCube")
+        {
+            rotateLeft = true;
+        }
+        else if(other.tag == "YellowCube")
+        {
+            rotateRight = true;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "OrangeCube")
         {
             rotateUp = false;
+        }
+        else if(other.tag == "BlueCube")
+        {
+            rotateDown = false;
+        }
+        else if(other.tag == "PurpleCube")
+        {
+            rotateLeft = false;
+        }
+        else if(other.tag == "YellowCube")
+        {
+            rotateRight = false;
         }
     }
 }
