@@ -1660,6 +1660,7 @@ MonoBehaviour:
   rotateUp: 0
   rotateDown: 0
   isRotating: 0
+  interactionDetect: {fileID: 0}
 --- !u!114 &1483993492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,7 +2071,7 @@ GameObject:
   - component: {fileID: 1854305004}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

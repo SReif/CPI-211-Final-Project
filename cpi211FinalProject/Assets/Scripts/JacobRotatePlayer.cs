@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotatePlayer : MonoBehaviour
+public class JacobRotatePlayer : MonoBehaviour
 {
     public float speed;
     public Transform target;
 
-    public RotateLevel rotateLevel;
+    public JacobRotateLevel rotateLevel;
     public PlayerGravity playerGravity;
     public bool interacting;
+
+    private bool canParent = false;
 
     public GameObject environment;
     void Start()
@@ -21,22 +23,22 @@ public class RotatePlayer : MonoBehaviour
     {
         GravityChanged();
 
-        /*
-        if (rotateLevel.isRotating == true)
+
+        if (rotateLevel.isRotating == true && canParent)
         {
             Parent(environment, transform.gameObject);
             Rotate();
         }
 
+
         else
         {
             UnParent();
         }
-        */
 
     }
 
-    /*
+
     void Parent(GameObject parent, GameObject child)
     {
         child.transform.parent = parent.transform;
@@ -46,6 +48,7 @@ public class RotatePlayer : MonoBehaviour
     {
         transform.parent = null;
     }
+
 
     void Rotate()
     {
@@ -62,13 +65,12 @@ public class RotatePlayer : MonoBehaviour
             Quaternion targetRotation = Quaternion.LookRotation(lookPosition, Vector3.down);
             transform.rotation = targetRotation;
         }
-            
+
     }
-    */
 
     void GravityChanged()
     {
-        if(playerGravity.gravityChanged == true)
+        if (playerGravity.gravityChanged == true)
         {
             Vector3 targetRotation = new Vector3(transform.rotation.x - 180f, transform.rotation.y, transform.rotation.z);
             transform.Rotate(targetRotation);
@@ -84,23 +86,22 @@ public class RotatePlayer : MonoBehaviour
             Debug.Log("Blue");
             if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
             {
-                Debug.Log("Interacting");
                 interacting = true;
                 rotateLevel.rotateLeft = true;
                 rotateLevel.isRotating = true;
             }
         }
 
-        if (other.name == "OrangeCube" && interacting == false)
+        if (other.tag == "OrangeCube" && interacting == false)
         {
             Debug.Log("Orange");
             if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
             {
-                Debug.Log("Interacting");
                 interacting = true;
                 rotateLevel.rotateRight = true;
                 rotateLevel.isRotating = true;
             }
+
         }
 
         if (other.name == "PurpleCube" && interacting == false)
@@ -129,5 +130,21 @@ public class RotatePlayer : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         interacting = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "environment")
+        {
+            canParent = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.tag == "environment")
+        {
+            canParent = false;
+        }
     }
 }

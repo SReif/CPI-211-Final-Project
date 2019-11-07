@@ -2,38 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateLevel : MonoBehaviour
+public class JacobRotateLevel : MonoBehaviour
 {
     public float counter;
     public float angle = 90f;
     public float speed = 0.5f;
 
-    public RotatePlayer rotatePlayer;
+    public JacobRotatePlayer rotatePlayer;
 
     private Vector3 rotateAngles;
 
     public bool rotateLeft, rotateRight, rotateUp, rotateDown;
     public bool isRotating;
 
+    public InteractableInteraction interactionDetect;
+
     // Start is called before the first frame update
     void Start()
     {
         counter = angle / speed;
+        interactionDetect = GameObject.FindGameObjectWithTag("Player").GetComponent<InteractableInteraction>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("j"))
+        if (Input.GetKeyDown("j") || interactionDetect.rotateLeft)
         {
-            if(isRotating == false)
+            if (isRotating == false)
             {
                 rotateLeft = true;
                 isRotating = true;
             }
         }
 
-        if (Input.GetKeyDown("l"))
+        if (Input.GetKeyDown("l") || interactionDetect.rotateRight)
         {
             if (isRotating == false)
             {
@@ -42,7 +45,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("i"))
+        if (Input.GetKeyDown("i") || interactionDetect.rotateUp)
         {
             if (isRotating == false)
             {
@@ -51,7 +54,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("k"))
+        if (Input.GetKeyDown("k") || interactionDetect.rotateDown)
         {
             if (isRotating == false)
             {
