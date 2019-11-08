@@ -6,17 +6,19 @@ public class PlayerGravity : MonoBehaviour
 {
     Rigidbody playerRigidBody;
     public bool gravityChanged;
+    public Vector3 gravity;
 
     void Start()
     {
-
+        gravity = Physics.gravity;
     }
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Tab))
         {
-            Physics.gravity *= -1;
+            gravity *= -1;
+            Physics.gravity = gravity;
             gravityChanged = true;
         }
 

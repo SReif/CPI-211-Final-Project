@@ -10,6 +10,8 @@ public class TestMove : MonoBehaviour
     public Vector3 movement;
     public bool isGrounded, isMoving;
 
+    public PlayerGravity playerGravity;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,6 @@ public class TestMove : MonoBehaviour
         if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             isMoving = true;
-            Debug.Log("Trying to Move");
         }
 
         else
@@ -40,7 +41,15 @@ public class TestMove : MonoBehaviour
 
         if(isMoving == true)
         {
-            transform.rotation = Quaternion.LookRotation(movement);
+            if(playerGravity.gravity.y < 0)
+            {
+                transform.rotation = Quaternion.LookRotation(movement, Vector3.up);
+            }
+            
+            if(playerGravity.gravity.y > 0)
+            {
+                transform.rotation = Quaternion.LookRotation(movement, Vector3.down);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)

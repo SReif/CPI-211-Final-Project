@@ -21,22 +21,22 @@ public class RotatePlayer : MonoBehaviour
     {
         GravityChanged();
 
-        /*
+        
         if (rotateLevel.isRotating == true)
         {
             Parent(environment, transform.gameObject);
-            Rotate();
+            //Rotate();
         }
 
         else
         {
             UnParent();
         }
-        */
+       
 
     }
 
-    /*
+    
     void Parent(GameObject parent, GameObject child)
     {
         child.transform.parent = parent.transform;
@@ -47,6 +47,7 @@ public class RotatePlayer : MonoBehaviour
         transform.parent = null;
     }
 
+    /*
     void Rotate()
     {
         Vector3 lookPosition = new Vector3(0f, 0f, target.position.z - transform.position.z);
