@@ -20,7 +20,6 @@ public class RotatePlayer : MonoBehaviour
     void Update()
     {
         GravityChanged();
-
         
         if (rotateLevel.isRotating == true)
         {
