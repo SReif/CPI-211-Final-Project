@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotatePlayer : MonoBehaviour
 {
     public float speed;
-    public Transform target;
+   //public Transform target;
 
     public RotateLevel rotateLevel;
     public PlayerGravity playerGravity;
@@ -32,7 +32,6 @@ public class RotatePlayer : MonoBehaviour
         {
             UnParent();
         }
-       
 
     }
 
@@ -48,6 +47,7 @@ public class RotatePlayer : MonoBehaviour
     }
 
     /*
+    //If using, include an object/empty object for the player to look at.
     void Rotate()
     {
         Vector3 lookPosition = new Vector3(0f, 0f, target.position.z - transform.position.z);
@@ -78,11 +78,8 @@ public class RotatePlayer : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Entered " + other);
-
         if (other.name == "BlueCube" && interacting == false)
         {
-            Debug.Log("Blue");
             if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
             {
                 Debug.Log("Interacting");
@@ -94,7 +91,6 @@ public class RotatePlayer : MonoBehaviour
 
         if (other.name == "OrangeCube" && interacting == false)
         {
-            Debug.Log("Orange");
             if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
             {
                 Debug.Log("Interacting");
@@ -106,9 +102,9 @@ public class RotatePlayer : MonoBehaviour
 
         if (other.name == "PurpleCube" && interacting == false)
         {
-            Debug.Log("Purple");
             if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
             {
+                Debug.Log("Interacting");
                 interacting = true;
                 rotateLevel.rotateUp = true;
                 rotateLevel.isRotating = true;
@@ -117,11 +113,33 @@ public class RotatePlayer : MonoBehaviour
 
         if (other.name == "YellowCube" && interacting == false)
         {
-            Debug.Log("Yellow");
             if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
             {
+                Debug.Log("Interacting");
                 interacting = true;
                 rotateLevel.rotateDown = true;
+                rotateLevel.isRotating = true;
+            }
+        }
+
+        if (other.name == "GreenCube" && interacting == false)
+        {
+            if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
+            {
+                Debug.Log("Interacting");
+                interacting = true;
+                rotateLevel.rotateClockwise = true;
+                rotateLevel.isRotating = true;
+            }
+        }
+
+        if (other.name == "RedCube" && interacting == false)
+        {
+            if (rotateLevel.isRotating == false && Input.GetKeyDown("f"))
+            {
+                Debug.Log("Interacting");
+                interacting = true;
+                rotateLevel.rotateCounterClockwise = true;
                 rotateLevel.isRotating = true;
             }
         }

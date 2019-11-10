@@ -52,9 +52,17 @@ public class TestMove : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
+        if(isGrounded == true)
         {
-            rb.velocity = transform.up * jumpForce;
+            rb.freezeRotation = false;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                rb.velocity = transform.up * jumpForce;
+            }
+        }
+        
+        if(isGrounded == false)
+        {
             rb.freezeRotation = true;
         }
     }
@@ -62,7 +70,7 @@ public class TestMove : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         //Debug.Log("Collided with " + collision.gameObject.tag);
-        if(collision.gameObject.tag == "environment" || collision.gameObject.tag == "non rotating environment")
+        if(collision.gameObject.tag == "environment")
         {
             isGrounded = true;
         }
@@ -70,7 +78,7 @@ public class TestMove : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "environment" || collision.gameObject.tag == "non rotating environment")
+        if (collision.gameObject.tag == "environment")
         {
             isGrounded = false;
         }

@@ -8,11 +8,9 @@ public class RotateLevel : MonoBehaviour
     public float angle = 90f;
     public float speed = 0.5f;
 
-    public RotatePlayer rotatePlayer;
-
     private Vector3 rotateAngles;
 
-    public bool rotateLeft, rotateRight, rotateUp, rotateDown;
+    public bool rotateLeft, rotateRight, rotateUp, rotateDown, rotateClockwise, rotateCounterClockwise;
     public bool isRotating;
 
     // Start is called before the first frame update
@@ -56,6 +54,24 @@ public class RotateLevel : MonoBehaviour
             if (isRotating == false)
             {
                 rotateDown = true;
+                isRotating = true;
+            }
+        }
+
+        if(Input.GetKeyDown("u"))
+        {
+            if(isRotating == false)
+            {
+                rotateClockwise = true;
+                isRotating = true;
+            }
+        }
+
+        if (Input.GetKeyDown("o"))
+        {
+            if (isRotating == false)
+            {
+                rotateCounterClockwise = true;
                 isRotating = true;
             }
         }
@@ -133,6 +149,42 @@ public class RotateLevel : MonoBehaviour
             {
                 isRotating = false;
                 rotateUp = false;
+                counter = angle / speed;
+            }
+        }
+
+        if (rotateClockwise == true)
+        {
+            rotateAngles = new Vector3(0f, 0f, speed);
+
+            if (counter > 0)
+            {
+                transform.Rotate(rotateAngles, Space.World);
+                counter--;
+            }
+
+            else
+            {
+                isRotating = false;
+                rotateClockwise = false;
+                counter = angle / speed;
+            }
+        }
+
+        if (rotateCounterClockwise == true)
+        {
+            rotateAngles = new Vector3(0f, 0f, -speed);
+
+            if (counter > 0)
+            {
+                transform.Rotate(rotateAngles, Space.World);
+                counter--;
+            }
+
+            else
+            {
+                isRotating = false;
+                rotateCounterClockwise = false;
                 counter = angle / speed;
             }
         }
