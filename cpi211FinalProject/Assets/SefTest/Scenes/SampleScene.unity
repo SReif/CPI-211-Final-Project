@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.4482451, g: 0.49827182, b: 0.57558125, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,7 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-  m_LightingDataAsset: {fileID: 112000000, guid: 4cb018e97f9008a4e8cefea21f448310,
+  m_LightingDataAsset: {fileID: 112000000, guid: 35fad4554381032489eb79254c1d7ddd,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -121,6 +121,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &627110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6186922311774400821, guid: 1cdfb8343286c4442b908a9ab81f9cdc,
+    type: 3}
+  m_PrefabInstance: {fileID: 7142375625991745578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &627112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab1165b9b6703d40917fccfa947b36e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &440225989
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +486,7 @@ PrefabInstance:
     - target: {fileID: 677632671600377603, guid: 9faae6da4e8530f4d9405a3dc3527839,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.94
+      value: 4.76
       objectReference: {fileID: 0}
     - target: {fileID: 677632671600377603, guid: 9faae6da4e8530f4d9405a3dc3527839,
         type: 3}
@@ -534,6 +552,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6186922311774400820, guid: 1cdfb8343286c4442b908a9ab81f9cdc,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6186922311774400817, guid: 1cdfb8343286c4442b908a9ab81f9cdc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7142375626934485435, guid: 1cdfb8343286c4442b908a9ab81f9cdc,
         type: 3}
       propertyPath: m_Name

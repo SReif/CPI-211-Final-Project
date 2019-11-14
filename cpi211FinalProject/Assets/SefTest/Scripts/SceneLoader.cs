@@ -58,4 +58,11 @@ public class SceneLoader : MonoBehaviour
         Time.timeScale = 1.0f;
         paused = false;
     }
+
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1.0f;
+        paused = false;
+    }
 }

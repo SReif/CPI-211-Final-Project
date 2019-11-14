@@ -21,7 +21,7 @@ public class TestPoints : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Entered " + other);
+        Debug.Log("Entered " + other.transform.tag);
         if (other.gameObject.tag == "environment")
         {
             movementSpeed = -movementSpeed;
