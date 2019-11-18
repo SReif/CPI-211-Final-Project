@@ -19,7 +19,7 @@ public class CBbehavior : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            //collision.gameObject.GetComponent<HealthSystem>().Damage(10);
+            collision.gameObject.GetComponent<HealthSystem>().Damage(10);
         }
         if (collision.gameObject.tag == "untagged" || collision.gameObject.tag == "wall")
         {

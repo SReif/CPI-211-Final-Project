@@ -10,6 +10,7 @@ TagManager:
   - BlueCube
   - PurpleCube
   - YellowCube
+  - Enemy
   layers:
   - Default
   - TransparentFX

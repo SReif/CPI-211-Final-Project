@@ -23,7 +23,13 @@ public class BlockWayPoint : MonoBehaviour
     {
         if (collision.gameObject.tag == "wall")
         {
+            Debug.Log("hit wall");
             movementSpeed = -movementSpeed;
+        }
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<HealthSystem>().Damage(10);
+            Debug.Log("hit player");
         }
     }
 }
