@@ -58,6 +58,7 @@ public class TestMove : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 rb.velocity = transform.up * jumpForce;
+                FindObjectOfType<AudioManager>().Play("Jump");
             }
         }
         

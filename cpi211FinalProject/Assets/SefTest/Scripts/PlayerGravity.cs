@@ -20,6 +20,7 @@ public class PlayerGravity : MonoBehaviour
             gravity *= -1;
             Physics.gravity = gravity;
             gravityChanged = true;
+            FindObjectOfType<AudioManager>().Play("Gravity");
         }
 
         else

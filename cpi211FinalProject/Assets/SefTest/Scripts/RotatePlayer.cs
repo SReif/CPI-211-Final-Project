@@ -85,6 +85,8 @@ public class RotatePlayer : MonoBehaviour
                 interacting = true;
                 rotateLevel.rotateLeft = true;
                 rotateLevel.isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Interact");
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -96,6 +98,8 @@ public class RotatePlayer : MonoBehaviour
                 interacting = true;
                 rotateLevel.rotateRight = true;
                 rotateLevel.isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Interact");
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -107,6 +111,8 @@ public class RotatePlayer : MonoBehaviour
                 interacting = true;
                 rotateLevel.rotateUp = true;
                 rotateLevel.isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Interact");
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -118,6 +124,8 @@ public class RotatePlayer : MonoBehaviour
                 interacting = true;
                 rotateLevel.rotateDown = true;
                 rotateLevel.isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Interact");
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -129,6 +137,8 @@ public class RotatePlayer : MonoBehaviour
                 interacting = true;
                 rotateLevel.rotateClockwise = true;
                 rotateLevel.isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Interact");
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -140,6 +150,8 @@ public class RotatePlayer : MonoBehaviour
                 interacting = true;
                 rotateLevel.rotateCounterClockwise = true;
                 rotateLevel.isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Interact");
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
     }
