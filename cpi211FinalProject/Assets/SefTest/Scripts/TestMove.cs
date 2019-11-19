@@ -57,6 +57,7 @@ public class TestMove : MonoBehaviour
             rb.freezeRotation = false;
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                isGrounded = false;
                 rb.velocity = transform.up * jumpForce;
                 FindObjectOfType<AudioManager>().Play("Jump");
             }
@@ -68,20 +69,20 @@ public class TestMove : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log("Collided with " + collision.gameObject.tag);
-        if(collision.gameObject.tag == "environment")
-        {
+        //if(collision.gameObject.tag == "environment")
+        //{
             isGrounded = true;
-        }
+        //}
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "environment")
-        {
-            isGrounded = false;
-        }
+        //if (collision.gameObject.tag == "environment")
+        //{
+            
+        //}
     }
 }

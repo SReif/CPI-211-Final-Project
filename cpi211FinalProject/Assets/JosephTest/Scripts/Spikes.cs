@@ -18,11 +18,11 @@ public class Spikes : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            //collision.gameObject.GetComponent<HealthSystem>().Damage(10);
+            collision.gameObject.GetComponent<HealthSystem>().Damage(10);
         }
     }
 }
