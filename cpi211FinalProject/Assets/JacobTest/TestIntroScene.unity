@@ -233,11 +233,19 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521700370}
-  m_Text: 'Once again, I have to try this
-
-    to see whether this will work or
-
-    not. So far so good.'
+  m_Text: "FLIP N' FALL\n\n\n\nCaptain Cube, the dauntless\nspace shark, sets of on
+    a grand\nquest to discover the secrets\nof the universe and share his\ndiscoveries
+    for all sentient\nsharkkind.\n\nMeanwhile, in the outermost\ncorners of the Andromeda\nGalaxy,
+    Andromegalodon,\nthe evil space tyrant, commands\nhis subjects to construct\nan
+    interdimensional \nspace dungeon, designed\nto trap unsuspecting\nexplorers. \n\nOnce
+    breaching the atmosphere\nof Planet Water, Captain\nCube engages hyper speed\nand
+    crash lands in\nthe Andromedungeon.\n\nHaving obtained readings\non the area's
+    dimensional\nflux, Captain Cube devises\na plan to get back to his\nhome planet.
+    He must\nexplore the Andromedungeon\nto search for a concentrated\npoint of dimensional
+    flux\nthat is so unstable that it\ncreates a tear in space-time.\n\nUnfortunately,
+    Cube has\nno idea where each tear\nwill lead him.\n\nRecognizing that he has\nno
+    other choice, Cube begins\nhis perilous journey in the\nAndromedungeon.\n\nGood
+    luck, brave adventurer!\n\nMay you escape the gaze of\nAndromegalodon..."
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -350,7 +358,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521700370}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0, z: -1.99}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -358,7 +366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.8, y: 1}
+  m_AnchoredPosition: {x: -12, y: -0.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &521700377
@@ -374,7 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 521700376}
-  scrollSpeed: 0.05
+  scrollSpeed: 0.02
 --- !u!1 &939637959
 GameObject:
   m_ObjectHideFlags: 0
