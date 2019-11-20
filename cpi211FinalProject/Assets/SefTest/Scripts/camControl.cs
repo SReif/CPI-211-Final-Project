@@ -16,7 +16,7 @@ public class camControl : MonoBehaviour
 
     void Start()
     {
-        cam.transform.position = new Vector3(0, 3, -5);
+        cam.transform.position = FindObjectOfType<Camera>().transform.position;
         offset = cam.transform.position - transform.position;
     }
 
@@ -43,10 +43,12 @@ public class camControl : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotSpeed, Vector3.up) * offset;
-            offset = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * rotSpeed, Vector3.right) * offset;
+            //offset = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * rotSpeed, Vector3.right) * offset;
             //offset.y = Mathf.Clamp(offset.y, minRotate, maxRotate);
-            cam.transform.position = transform.position + offset;
-            cam.transform.LookAt(transform.position);
+            
+            
         }
+        cam.transform.position = transform.position + offset;
+        cam.transform.LookAt(transform.position);
     }
 }
