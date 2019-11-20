@@ -65,4 +65,10 @@ public class SceneLoader : MonoBehaviour
         Time.timeScale = 1.0f;
         paused = false;
     }
+
+    public void Lose()
+    {
+        SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
+        Time.timeScale = 0.0f;
+    }
 }

@@ -71,18 +71,6 @@ public class TestMove : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //Debug.Log("Collided with " + collision.gameObject.tag);
-        //if(collision.gameObject.tag == "environment")
-        //{
             isGrounded = true;
-        //}
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        //if (collision.gameObject.tag == "environment")
-        //{
-            
-        //}
     }
 }

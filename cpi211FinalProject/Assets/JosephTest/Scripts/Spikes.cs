@@ -18,7 +18,7 @@ public class Spikes : MonoBehaviour
     {
 
     }
-    private void OnCollisionEnter(Collider collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
