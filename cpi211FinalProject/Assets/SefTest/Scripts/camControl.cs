@@ -43,7 +43,10 @@ public class camControl : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotSpeed, Vector3.up) * offset;
-            //offset = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * rotSpeed, Vector3.right) * offset;
+            /*we need camera control to have it so that the vertical camera rotation is changed depending on the reference vector.
+             If the camera is facing in the same direction as vector3.right, set the reference vector to vector3.forward.
+             If the camera is facing in the same direction as vector3.forward, set the reference vector to vector3.right.*/
+            offset = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * rotSpeed, Vector3.forward) * offset;
             //offset.y = Mathf.Clamp(offset.y, minRotate, maxRotate);
             
             
