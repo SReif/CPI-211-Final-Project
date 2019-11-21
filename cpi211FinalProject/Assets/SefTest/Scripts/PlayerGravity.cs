@@ -7,16 +7,19 @@ public class PlayerGravity : MonoBehaviour
     Rigidbody playerRigidBody;
     public bool gravityChanged;
     public Vector3 gravity;
+    private int gravityCount;
 
     void Start()
     {
+        gravityCount = 2;
         gravity = Physics.gravity;
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Tab))
+        if(Input.GetKeyDown(KeyCode.Tab) && gravityCount > 0)
         {
+            gravityCount -= 1;
             gravity *= -1;
             Physics.gravity = gravity;
             gravityChanged = true;
@@ -27,5 +30,10 @@ public class PlayerGravity : MonoBehaviour
         {
             gravityChanged = false;
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        gravityCount = 2;
     }
 }

@@ -10,6 +10,8 @@ public class TestMove : MonoBehaviour
     public Vector3 movement;
     public bool isGrounded, isMoving;
 
+    private int jumpCount;
+
     public PlayerGravity playerGravity;
     public Transform cam;
     private Vector3 movementDirection;
@@ -18,6 +20,7 @@ public class TestMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        jumpCount = 1;
     }
 
     // Update is called once per frame
@@ -65,25 +68,27 @@ public class TestMove : MonoBehaviour
             }
         }
 
-        if(isGrounded == true)
+        if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
         {
-            rb.freezeRotation = false;
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                isGrounded = false;
-                rb.velocity = transform.up * jumpForce;
-                FindObjectOfType<AudioManager>().Play("Jump");
-            }
+            jumpCount -= 1;
+            isGrounded = false;
+            rb.velocity = transform.up * jumpForce;
+            FindObjectOfType<AudioManager>().Play("Jump");
         }
-        
-        if(isGrounded == false)
+
+        if (isGrounded == false)
         {
             rb.freezeRotation = true;
+        }
+        else
+        {
+            rb.freezeRotation = false;
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-            isGrounded = true;
+        isGrounded = true;
+        jumpCount = 1;
     }
 }

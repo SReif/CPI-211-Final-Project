@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 426397081}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: wall
+  m_TagString: environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 643147802}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: wall
+  m_TagString: environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1535,6 +1535,7 @@ MonoBehaviour:
   isGrounded: 0
   isMoving: 0
   playerGravity: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!114 &1094172138
 MonoBehaviour:
   m_ObjectHideFlags: 0

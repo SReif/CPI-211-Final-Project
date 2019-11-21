@@ -21,7 +21,8 @@ public class CBbehavior : MonoBehaviour
         {
             collision.gameObject.GetComponent<HealthSystem>().Damage(10);
         }
-        if (collision.gameObject.tag == "untagged" || collision.gameObject.tag == "wall")
+
+        if(collision.gameObject.name != "DeathCube")
         {
             Destroy(gameObject);
         }

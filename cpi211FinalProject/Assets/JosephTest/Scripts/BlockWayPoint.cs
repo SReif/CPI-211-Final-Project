@@ -21,7 +21,7 @@ public class BlockWayPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "wall")
+        if (collision.gameObject.tag == "environment")
         {
             Debug.Log("hit wall");
             movementSpeed = -movementSpeed;
