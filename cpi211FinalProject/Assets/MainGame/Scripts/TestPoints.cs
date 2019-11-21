@@ -28,6 +28,7 @@ public class TestPoints : MonoBehaviour
         }
         if (other.gameObject.tag == "Player")
         {
+            movementSpeed = -movementSpeed;
             other.gameObject.GetComponent<HealthSystem>().Damage(10);
             Debug.Log("hit player");
         }
