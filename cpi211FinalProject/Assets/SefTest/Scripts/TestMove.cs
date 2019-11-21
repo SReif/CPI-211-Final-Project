@@ -83,6 +83,8 @@ public class TestMove : MonoBehaviour
         else
         {
             rb.freezeRotation = false;
+            rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+            //rb.constraints = RigidbodyConstraints.FreezeRotationZ;
         }
     }
 
