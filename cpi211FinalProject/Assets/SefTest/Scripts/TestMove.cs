@@ -11,6 +11,8 @@ public class TestMove : MonoBehaviour
     public bool isGrounded, isMoving;
 
     public PlayerGravity playerGravity;
+    public Transform cam;
+    private Vector3 movementDirection;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,17 @@ public class TestMove : MonoBehaviour
     {
         movement.x = Input.GetAxis("Horizontal");
         movement.z = Input.GetAxis("Vertical");
+
+        Vector3 camF = cam.forward;
+        Vector3 camR = cam.right;
+
+        camF.y = 0;
+        camR.y = 0;
+
+        camF = camF.normalized;
+        camR = camR.normalized;
+
+        movementDirection = (camF * movement.z + camR * movement.x);
 
         if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
@@ -37,18 +50,18 @@ public class TestMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movementDirection * moveSpeed * Time.fixedDeltaTime);
 
         if(isMoving == true)
         {
             if(playerGravity.gravity.y < 0)
             {
-                transform.rotation = Quaternion.LookRotation(movement, Vector3.up);
+                transform.rotation = Quaternion.LookRotation(movementDirection, Vector3.up);
             }
             
             if(playerGravity.gravity.y > 0)
             {
-                transform.rotation = Quaternion.LookRotation(movement, Vector3.down);
+                transform.rotation = Quaternion.LookRotation(movementDirection, Vector3.down);
             }
         }
 

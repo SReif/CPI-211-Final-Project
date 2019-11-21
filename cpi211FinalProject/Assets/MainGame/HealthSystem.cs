@@ -15,12 +15,13 @@ public class HealthSystem : MonoBehaviour
     public float timer;
     public float waitTime = 1.0f;
 
+    public GameObject body;
     private Material p_Material;
     // Start is called before the first frame update
     void Start()
     {
         health = MaxHealth;
-        p_Material = GetComponent<Renderer>().material;
+        p_Material = body.GetComponent<Renderer>().material;
     }
 
     // Update is called once per frame
@@ -77,6 +78,6 @@ public class HealthSystem : MonoBehaviour
             }
         }
 
-        GetComponent<Renderer>().material.color = p_Material.color;
+        body.GetComponent<Renderer>().material.color = p_Material.color;
     }
 }
