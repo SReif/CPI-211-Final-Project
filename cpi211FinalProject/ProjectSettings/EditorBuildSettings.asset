@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Main Files/Scenes/PauseScene.unity
     guid: 7f75fd24663531e468d95a89f762db6d
   - enabled: 1
+    path: Assets/Old Files/JacobTest/TestIntroScene.unity
+    guid: 1db136d26b1282f40a3cca1b8c4ec857
+  - enabled: 1
     path: Assets/Main Files/TestScene.unity
     guid: c4849a62ac4c94b49a3eec373fe73358
   - enabled: 1
