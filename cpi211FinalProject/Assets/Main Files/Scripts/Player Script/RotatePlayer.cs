@@ -13,6 +13,7 @@ public class RotatePlayer : MonoBehaviour
 
     public GameObject environment;
     private bool canChange = true;
+    public Transform camera;
     void Start()
     {
         speed = rotateLevel.speed;
@@ -71,10 +72,12 @@ public class RotatePlayer : MonoBehaviour
 
     void GravityChanged()
     {
-        if(playerGravity.gravityChanged == true)
+        if(Physics.gravity.y > 0)//if(playerGravity.gravityChanged == true)
         {
-            Vector3 targetRotation = new Vector3(transform.rotation.x - 180f, transform.rotation.y, transform.rotation.z);
+            Vector3 camPosition = camera.position;
+            Vector3 targetRotation = new Vector3(- 180f, transform.rotation.y, transform.rotation.z);
             transform.Rotate(targetRotation);
+            //camera.position = camPosition;
         }
     }
 

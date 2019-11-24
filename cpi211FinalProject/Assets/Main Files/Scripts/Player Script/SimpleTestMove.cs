@@ -43,7 +43,14 @@ public class SimpleTestMove : MonoBehaviour
         {
             jumpCount -= 1;
             isGrounded = false;
-            rb.velocity = transform.up * jumpForce;
+            if(Physics.gravity.y < 0)
+            {
+                rb.velocity = transform.up * jumpForce;
+            }
+            else
+            {
+                rb.velocity = transform.up * -jumpForce;
+            }
             FindObjectOfType<AudioManager>().Play("Jump");
         }
 
@@ -62,9 +69,16 @@ public class SimpleTestMove : MonoBehaviour
     {
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
-
-        Vector3 playerMovement = new Vector3(hor, 0f, ver) * speed * Time.deltaTime;
-        transform.Translate(playerMovement, Space.Self);
+        if(Physics.gravity.y < 0)
+        {
+            Vector3 playerMovement = new Vector3(hor, 0f, ver) * speed * Time.deltaTime;
+            transform.Translate(playerMovement, Space.Self);
+        }
+        else
+        {
+            Vector3 playerMovement = new Vector3(hor, 0f, -ver) * speed * Time.deltaTime;
+            transform.Translate(playerMovement, Space.Self);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
