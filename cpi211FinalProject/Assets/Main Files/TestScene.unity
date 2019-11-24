@@ -1540,7 +1540,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1187161780}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004008856}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d91c68dd5eb7de4b8956901dfc94e00, type: 3}
   m_Name: 
@@ -1881,6 +1881,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Captain Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872529039277499585, guid: 77ed9920145b05643b3ca9690684cd7f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5583012182103152351, guid: 77ed9920145b05643b3ca9690684cd7f,
         type: 3}
