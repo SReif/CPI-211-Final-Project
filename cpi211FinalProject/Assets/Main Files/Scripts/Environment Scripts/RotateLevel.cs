@@ -13,6 +13,10 @@ public class RotateLevel : MonoBehaviour
     public bool rotateLeft, rotateRight, rotateUp, rotateDown, rotateClockwise, rotateCounterClockwise;
     public bool isRotating;
 
+    public bool isCollidingOrange = false;
+    public bool isCollidingBlue = false;
+    public bool isCollidingYellow = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +26,7 @@ public class RotateLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("j"))
+        if (Input.GetKeyDown("q") && isCollidingOrange)
         {
             if(isRotating == false)
             {
@@ -31,7 +35,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("l"))
+        if (Input.GetKeyDown("e") && isCollidingOrange)
         {
             if (isRotating == false)
             {
@@ -40,7 +44,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("i"))
+        if (Input.GetKeyDown("q") && isCollidingBlue)
         {
             if (isRotating == false)
             {
@@ -49,7 +53,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("k"))
+        if (Input.GetKeyDown("e") && isCollidingBlue)
         {
             if (isRotating == false)
             {
@@ -58,7 +62,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown("u"))
+        if(Input.GetKeyDown("q") && isCollidingYellow)
         {
             if(isRotating == false)
             {
@@ -67,7 +71,7 @@ public class RotateLevel : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("o"))
+        if (Input.GetKeyDown("e") && isCollidingYellow)
         {
             if (isRotating == false)
             {
