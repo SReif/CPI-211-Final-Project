@@ -7,6 +7,12 @@ public class DestroyPlayer : MonoBehaviour
 {
     private GameObject player;
     private int loadCount;
+    Vector3 gravityVector;
+
+    private void Start()
+    {
+        gravityVector = Physics.gravity;
+    }
 
     private void Update()
     {
@@ -24,6 +30,7 @@ public class DestroyPlayer : MonoBehaviour
         if(other.gameObject == player)
         {
             Destroy(other.gameObject);
+            Physics.gravity = gravityVector;
         }
     }
 
