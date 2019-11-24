@@ -30,12 +30,12 @@ public class SimpleTestCamControl : MonoBehaviour
         }
         else
         {
-            mouseX -= Input.GetAxis("Mouse X") * RotationSpeed;
+            mouseX += Input.GetAxis("Mouse X") * RotationSpeed;
             mouseY -= Input.GetAxis("Mouse Y") * RotationSpeed;
         }
         mouseY = Mathf.Clamp(mouseY, -60, 80);
 
-        transform.LookAt(Target);
+        
         if(Physics.gravity.y < 0 && canChange)
         {
             mouseX += 180;
@@ -46,7 +46,9 @@ public class SimpleTestCamControl : MonoBehaviour
             mouseX += 180;
             canChange = true;
         }
-        Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
+        Target.rotation = Quaternion.Euler(mouseY, mouseX, 180f);
         Player.rotation = Quaternion.Euler(0, mouseX, 0);
+        Camera.rotation = Quaternion.Euler(Camera.rotation.x, Camera.rotation.y, 180f);
+        transform.LookAt(Target);
     }
 }

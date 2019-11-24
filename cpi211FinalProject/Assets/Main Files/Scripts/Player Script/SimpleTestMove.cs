@@ -76,8 +76,9 @@ public class SimpleTestMove : MonoBehaviour
         }
         else
         {
-            Vector3 playerMovement = new Vector3(hor, 0f, -ver) * speed * Time.deltaTime;
+            Vector3 playerMovement = new Vector3(-hor, 0f, -ver) * speed * Time.deltaTime;
             transform.Translate(playerMovement, Space.Self);
+            //transform.Rotate(0f, 180f, 180f);
         }
     }
 

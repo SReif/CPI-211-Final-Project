@@ -75,7 +75,8 @@ public class RotatePlayer : MonoBehaviour
         if(Physics.gravity.y > 0)//if(playerGravity.gravityChanged == true)
         {
             Vector3 camPosition = camera.position;
-            Vector3 targetRotation = new Vector3(- 180f, transform.rotation.y, transform.rotation.z);
+            //Vector3 targetRotation = new Vector3(180f, transform.rotation.y, transform.rotation.z);
+            Vector3 targetRotation = new Vector3(180f, 0f, 180f);
             transform.Rotate(targetRotation);
             //camera.position = camPosition;
         }
