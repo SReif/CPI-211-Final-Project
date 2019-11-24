@@ -20,7 +20,7 @@ public class CannonShoot : MonoBehaviour
     void Update()
     {
         shotDelay--;
-       if(shotDelay % shotTime == 0)
+        if (shotDelay % shotTime == 0 && Time.timeScale == 1)
         {
             Fire(); 
         }

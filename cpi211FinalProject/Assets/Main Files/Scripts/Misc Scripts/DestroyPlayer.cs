@@ -9,6 +9,10 @@ public class DestroyPlayer : MonoBehaviour
     private int loadCount;
     Vector3 gravityVector;
 
+    public SceneLoader loader;
+
+    public Transform spawnPoint;
+
     private void Start()
     {
         gravityVector = Physics.gravity;
@@ -17,11 +21,20 @@ public class DestroyPlayer : MonoBehaviour
     private void Update()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        if(!player && loadCount == 0)
+        if(/*!player*/player.GetComponent<HealthSystem>().health <= 0 && loadCount == 0 && player.GetComponent<HealthSystem>().lives <= 0)
         {
+            player.GetComponent<SimpleTestMove>().enabled = false;
+            player.GetComponent<HealthSystem>().enabled = false;
             SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
             loadCount = 1;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if(/*!player*/player.GetComponent<HealthSystem>().health <= 0 && loadCount == 0 && player.GetComponent<HealthSystem>().lives > 0)
+        {
+            player.GetComponent<HealthSystem>().lives -= 1;
+            player.GetComponent<HealthSystem>().health = 100f;
+            //loader.Retry();
+            player.transform.position = spawnPoint.position;
         }
     }
 
@@ -29,7 +42,8 @@ public class DestroyPlayer : MonoBehaviour
     {
         if(other.gameObject == player)
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            other.gameObject.GetComponent<HealthSystem>().health = 0;
             Physics.gravity = gravityVector;
         }
     }
