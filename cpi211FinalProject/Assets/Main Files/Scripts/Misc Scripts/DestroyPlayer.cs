@@ -17,6 +17,8 @@ public class DestroyPlayer : MonoBehaviour
 
     private bool canLoseLife = true;
 
+    public RotateLevel rotateFactors;
+
     private void Start()
     {
         gravityVector = Physics.gravity;
@@ -39,6 +41,7 @@ public class DestroyPlayer : MonoBehaviour
             player.GetComponent<HealthSystem>().lives -= 1;
             player.GetComponent<HealthSystem>().health = 100f;
             //loader.Retry();
+            rotateFactors.counter = 0f;
             player.transform.position = spawnPoint.position;
             //canLoseLife = false;
         }
