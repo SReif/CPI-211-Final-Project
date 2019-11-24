@@ -68,7 +68,7 @@ public class HealthSystem : MonoBehaviour
                 else
                 {
                     Physics.gravity = new Vector3(0f, -9.8f, 0);
-                    lives -= 1;
+                    //lives -= 1;
                     //loader.Retry();
                 }
                 //Instantiate(explosion, self.transform.position, self.transform.rotation);

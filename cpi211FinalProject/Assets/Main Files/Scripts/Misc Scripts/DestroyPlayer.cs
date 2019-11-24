@@ -13,6 +13,10 @@ public class DestroyPlayer : MonoBehaviour
 
     public Transform spawnPoint;
 
+    public Transform stage;
+
+    private bool canLoseLife = true;
+
     private void Start()
     {
         gravityVector = Physics.gravity;
@@ -29,12 +33,14 @@ public class DestroyPlayer : MonoBehaviour
             loadCount = 1;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        else if(/*!player*/player.GetComponent<HealthSystem>().health <= 0 && loadCount == 0 && player.GetComponent<HealthSystem>().lives > 0)
+        else if(/*!player*/player.GetComponent<HealthSystem>().health <= 0 && loadCount == 0 && player.GetComponent<HealthSystem>().lives > 0 && canLoseLife)
         {
+            stage.rotation = Quaternion.Euler(0, 0, 0);
             player.GetComponent<HealthSystem>().lives -= 1;
             player.GetComponent<HealthSystem>().health = 100f;
             //loader.Retry();
             player.transform.position = spawnPoint.position;
+            //canLoseLife = false;
         }
     }
 
