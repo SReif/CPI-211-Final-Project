@@ -7,7 +7,7 @@ public class PlayerGravity : MonoBehaviour
     Rigidbody playerRigidBody;
     public bool gravityChanged;
     public Vector3 gravity;
-    private int gravityCount;
+    public int gravityCount;
 
     void Start()
     {

@@ -12,6 +12,7 @@ public class RotatePlayer : MonoBehaviour
     public bool interacting;
 
     public GameObject environment;
+    private bool canChange = true;
     void Start()
     {
         speed = rotateLevel.speed;
