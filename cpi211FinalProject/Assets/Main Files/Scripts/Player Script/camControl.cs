@@ -18,7 +18,7 @@ public class camControl : MonoBehaviour
     void Start()
     {
         cam = FindObjectOfType<Camera>();
-        //cam.transform.position = FindObjectOfType<Camera>().transform.position;
+        cam.transform.position = FindObjectOfType<Camera>().transform.position;
         offset = cam.transform.position - transform.position;
     }
 
