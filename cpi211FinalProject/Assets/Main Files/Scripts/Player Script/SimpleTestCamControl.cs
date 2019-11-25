@@ -23,32 +23,32 @@ public class SimpleTestCamControl : MonoBehaviour
 
     void CamControl()
     {
-        if(Physics.gravity.y < 0)
+        //if(Physics.gravity.y < 0)
+        //{
+            mouseX += Input.GetAxis("Mouse X") * RotationSpeed;
+            mouseY -= Input.GetAxis("Mouse Y") * RotationSpeed;
+        //}
+        /*else
         {
             mouseX += Input.GetAxis("Mouse X") * RotationSpeed;
             mouseY -= Input.GetAxis("Mouse Y") * RotationSpeed;
-        }
-        else
-        {
-            mouseX += Input.GetAxis("Mouse X") * RotationSpeed;
-            mouseY -= Input.GetAxis("Mouse Y") * RotationSpeed;
-        }
+        }*/
         mouseY = Mathf.Clamp(mouseY, -60, 80);
 
         
-        if(Physics.gravity.y < 0 && canChange)
-        {
-            mouseX += 180;
-            canChange = false;
-        }
-        else if(Physics.gravity.y >= 0 && !canChange)
+        //if(Physics.gravity.y < 0 && canChange)
+        //{
+            //mouseX += 180;
+            //canChange = false;
+        //}
+        /*else if(Physics.gravity.y >= 0 && !canChange)
         {
             mouseX += 180;
             canChange = true;
-        }
+        }*/
         Target.rotation = Quaternion.Euler(mouseY, mouseX, 180f);
-        Player.rotation = Quaternion.Euler(0, mouseX, 0);
-        Camera.rotation = Quaternion.Euler(Camera.rotation.x, Camera.rotation.y, 180f);
+        Player.rotation = Quaternion.Euler(0f, mouseX, 0f);
+        Camera.rotation = Quaternion.Euler(Camera.rotation.x, Camera.rotation.y, Camera.rotation.z);//180f);
         transform.LookAt(Target);
     }
 }
