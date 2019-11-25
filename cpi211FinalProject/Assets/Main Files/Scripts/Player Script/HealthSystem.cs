@@ -20,14 +20,14 @@ public class HealthSystem : MonoBehaviour
     public float waitTime = 1.0f;
 
     public GameObject body;
-    private Material p_Material;
+    public Material p_Material;
 
     public Text livesDisplay;
     // Start is called before the first frame update
     void Start()
     {
         health = MaxHealth;
-        p_Material = body.GetComponent<Renderer>().material;
+        p_Material.SetFloat("_alpha", 1f);
     }
 
     // Update is called once per frame
@@ -84,17 +84,16 @@ public class HealthSystem : MonoBehaviour
         
         if (iFrame == true)
         {
-            p_Material.color = new Color(p_Material.color.r, p_Material.color.g, p_Material.color.b, timer/waitTime);
+            p_Material.SetFloat("_alpha", timer/waitTime);
             timer += Time.deltaTime;
 
             if (timer >= waitTime)
             {
-                p_Material.color = new Color(p_Material.color.r, p_Material.color.g, p_Material.color.b, 1f);
+                p_Material.SetFloat("_alpha", 1f);
                 timer = 0f;
                 iFrame = false;
             }
         }
 
-        body.GetComponent<Renderer>().material.color = p_Material.color;
     }
 }
