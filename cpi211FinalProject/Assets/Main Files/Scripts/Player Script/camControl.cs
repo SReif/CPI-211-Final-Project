@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class camControl : MonoBehaviour
 {
-    private Camera cam;
+    public Camera cam;
 
     //zoom variables
     private float zoomFactor = 1.0f, minZoom = 10.0f, maxZoom = 100.0f;
@@ -17,8 +17,8 @@ public class camControl : MonoBehaviour
 
     void Start()
     {
-        cam = FindObjectOfType<Camera>();
-        //cam.transform.position = FindObjectOfType<Camera>().transform.position;
+        //cam = FindObjectOfType<Camera>();
+        cam.transform.position = cam.transform.position;//FindObjectOfType<Camera>().transform.position;
         offset = cam.transform.position - transform.position;
     }
 
@@ -26,6 +26,14 @@ public class camControl : MonoBehaviour
     {
         zoom();
         rcRotate();
+        if (Time.timeScale == 1)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     void zoom()
@@ -33,9 +41,11 @@ public class camControl : MonoBehaviour
         //zooms on mousewheel forwards/backwards
         if (Input.mouseScrollDelta.y != 0)
         {
-            Camera.main.fieldOfView -= Input.mouseScrollDelta.y * zoomFactor;
-            Camera.main.fieldOfView = Mathf.Clamp(Camera.main.fieldOfView, minZoom, maxZoom);
-            Debug.Log("Camera Zoom: " + Camera.main.fieldOfView + "%");
+            //Camera.main.fieldOfView -= Input.mouseScrollDelta.y * zoomFactor;
+            //Camera.main.fieldOfView = Mathf.Clamp(Camera.main.fieldOfView, minZoom, maxZoom);
+            cam.fieldOfView -= Input.mouseScrollDelta.y * zoomFactor;
+            cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minZoom, maxZoom);
+            //Debug.Log("Camera Zoom: " + Camera.main.fieldOfView + "%");
         }
     }
 

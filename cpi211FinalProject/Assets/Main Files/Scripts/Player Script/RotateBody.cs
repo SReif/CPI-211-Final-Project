@@ -6,29 +6,31 @@ public class RotateBody : MonoBehaviour
 {
     private bool canChange = false;
     private bool gravSet = true;
+
+    public Transform player;
     // Start is called before the first frame update
     void Start()
     {
-        transform.rotation = Quaternion.Euler(0f, 270f, 0f);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gravSet)
+        if(Physics.gravity.y < 0 && !canChange)
         {
-            Physics.gravity *= -1;
-            Physics.gravity *= -1;
-            gravSet = false;
-        }
-        if(Physics.gravity.y > 0 && !canChange)
-        {
-            transform.rotation = Quaternion.Euler(0f, 270f, 0f);
+
+            //transform.rotation = Quaternion.Euler(0f, player.rotation.y + 90f, 0f);
+            transform.Rotate(0f, 180f, 180f, Space.Self);
             canChange = true;
+            Debug.Log("ROTATED" + player.rotation.y.ToString());
         }
-        else
+        else if(Physics.gravity.y >= 0 && canChange)
         {
-            //transform.Rotate(0, 180f, 0);
+            //transform.rotation = Quaternion.Euler(0f, player.rotation.y + 270f, 180f);
+            transform.Rotate(0f, 180f, 180f, Space.Self);
+            canChange = false;
+            Debug.Log("ROTATED AGAIN");
         }
     }
 }
