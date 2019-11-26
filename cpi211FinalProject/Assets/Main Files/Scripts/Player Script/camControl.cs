@@ -26,6 +26,14 @@ public class camControl : MonoBehaviour
     {
         zoom();
         rcRotate();
+        if (Time.timeScale == 1)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     void zoom()
