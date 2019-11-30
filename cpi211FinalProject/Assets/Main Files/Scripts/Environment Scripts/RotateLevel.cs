@@ -32,6 +32,7 @@ public class RotateLevel : MonoBehaviour
             {
                 rotateLeft = true;
                 isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -41,6 +42,7 @@ public class RotateLevel : MonoBehaviour
             {
                 rotateRight = true;
                 isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -50,6 +52,7 @@ public class RotateLevel : MonoBehaviour
             {
                 rotateUp = true;
                 isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -59,6 +62,7 @@ public class RotateLevel : MonoBehaviour
             {
                 rotateDown = true;
                 isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -68,6 +72,7 @@ public class RotateLevel : MonoBehaviour
             {
                 rotateClockwise = true;
                 isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
@@ -77,6 +82,7 @@ public class RotateLevel : MonoBehaviour
             {
                 rotateCounterClockwise = true;
                 isRotating = true;
+                FindObjectOfType<AudioManager>().Play("Rotate");
             }
         }
 
