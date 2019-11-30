@@ -79,7 +79,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3698587411326255641}
-  m_Text: Press 'F' to Interact
+  m_Text: '[F] Interact'
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1

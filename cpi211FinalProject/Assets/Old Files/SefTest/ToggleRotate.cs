@@ -32,7 +32,7 @@ public class ToggleRotate : MonoBehaviour
     {
         if (floatingTextPrefab && !FindObjectOfType<FloatingText>() && other.gameObject.name != "DeathCube")
         {
-            ShowFloatingText("Press 'F' to Interact", other.transform);
+            ShowFloatingText("[F] Interact", other.transform);
         }
     }
 
