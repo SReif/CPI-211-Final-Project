@@ -1722,9 +1722,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossStage: {fileID: 0}
   gravity: {fileID: 1075940109}
-  PRotation: {fileID: 0}
-  UIboss: {fileID: 0}
-  textBG: {fileID: 0}
+  PRotation: {fileID: 36031063}
+  UIboss: {fileID: 1854752875}
+  textBG: {fileID: 85737482}
 --- !u!1 &1162865685
 GameObject:
   m_ObjectHideFlags: 0

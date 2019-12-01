@@ -36,9 +36,9 @@ public class PopText : MonoBehaviour
         if (Input.GetKeyDown("tab"))                               // text for gravity change
         {
             Debug.Log("text disapear");
-            gravity.enabled = false;
-            UIboss.enabled = false;
-            textBG.enabled = false;
+            gravity.enabled = true;
+            UIboss.enabled = true;
+            textBG.enabled = true;
         }
         if (Input.GetKeyDown("q")|| Input.GetKeyDown("e"))        // text for rotation
         {
@@ -52,11 +52,11 @@ public class PopText : MonoBehaviour
             if (Input.GetKeyDown("p"))
         {
             Debug.Log("text apear");
-            bossStage.enabled = true;
-            gravity.enabled = true;
-            UIboss.enabled = true;
-            textBG.enabled = true;
-            PRotation.enabled = true;
+            bossStage.enabled = false;
+            gravity.enabled = false;
+            UIboss.enabled = false;
+            textBG.enabled = false;
+            PRotation.enabled = false;
         }
     }
 }
