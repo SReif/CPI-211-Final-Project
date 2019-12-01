@@ -17,6 +17,7 @@ public class SceneLoader : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("paused " + paused);
             if(paused)
             {
                 Resume();
@@ -46,9 +47,12 @@ public class SceneLoader : MonoBehaviour
 
     public void Pause()
     {
+        if(SceneManager.sceneCount <= 1)
+        {
             SceneManager.LoadScene("PauseScene", LoadSceneMode.Additive);
             Time.timeScale = 0.0f;
             paused = true;
+        }
     }
 
     public void Resume()

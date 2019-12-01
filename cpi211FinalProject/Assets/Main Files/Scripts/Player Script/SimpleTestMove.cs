@@ -10,7 +10,7 @@ public class SimpleTestMove : MonoBehaviour
     public Vector3 movement;
     public bool isGrounded, isMoving;
 
-    private int jumpCount;
+    public int jumpCount;
 
     public PlayerGravity playerGravity;
     public float speed = 3;

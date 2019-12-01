@@ -17,7 +17,7 @@ public class PlayerGravity : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Tab) && gravityCount > 0)
+        if(Input.GetKeyDown(KeyCode.LeftShift) && gravityCount > 0 || Input.GetKeyDown(KeyCode.RightShift) && gravityCount > 0)
         {
             gravityCount -= 1;
             gravity *= -1;
