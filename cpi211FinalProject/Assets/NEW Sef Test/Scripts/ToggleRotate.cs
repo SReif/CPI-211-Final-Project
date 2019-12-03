@@ -33,7 +33,7 @@ public class ToggleRotate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (floatingTextPrefab && !FindObjectOfType<FloatingText>() && other.gameObject.name != "DeathCube")
+        if (floatingTextPrefab && !FindObjectOfType<FloatingText>() && other.gameObject.name != "DeathCube" && other.gameObject.name != "DeathPanel")
         {
             ShowFloatingText("[F] Interact", other.transform);
         }
