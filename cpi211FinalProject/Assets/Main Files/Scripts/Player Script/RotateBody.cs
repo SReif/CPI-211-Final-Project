@@ -6,8 +6,6 @@ public class RotateBody : MonoBehaviour
 {
     private bool canChange = false;
     private bool gravSet = true;
-
-    public Transform player;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,15 +15,15 @@ public class RotateBody : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Physics.gravity.y < 0 && !canChange)
+        if(Physics.gravity.y >= 0 && !canChange)
         {
 
             //transform.rotation = Quaternion.Euler(0f, player.rotation.y + 90f, 0f);
             transform.Rotate(0f, 180f, 180f, Space.Self);
             canChange = true;
-            Debug.Log("ROTATED" + player.rotation.y.ToString());
+            Debug.Log("ROTATED" + transform.rotation.y.ToString());
         }
-        else if(Physics.gravity.y >= 0 && canChange)
+        else if(Physics.gravity.y < 0 && canChange)
         {
             //transform.rotation = Quaternion.Euler(0f, player.rotation.y + 270f, 180f);
             transform.Rotate(0f, 180f, 180f, Space.Self);

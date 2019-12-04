@@ -14,9 +14,7 @@ public class PopText : MonoBehaviour
     public Image UIboss;
     public Image textBG;
 
-    public 
-
-    private bool checkFinalStage = false;
+    //private bool checkFinalStage = false;
     private bool counting = false;
     void Start()
     {

@@ -26,6 +26,7 @@ public class HealthSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        loader = FindObjectOfType<SceneLoader>();
         health = MaxHealth;
         p_Material.SetFloat("_alpha", 1f);
     }

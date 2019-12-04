@@ -15,11 +15,23 @@ EditorBuildSettings:
     path: Assets/Main Files/Scenes/PauseScene.unity
     guid: 7f75fd24663531e468d95a89f762db6d
   - enabled: 1
-    path: Assets/Old Files/JacobTest/TestIntroScene.unity
+    path: Assets/Main Files/Scenes/IntroScene.unity
     guid: 1db136d26b1282f40a3cca1b8c4ec857
   - enabled: 1
-    path: Assets/Main Files/TestScene.unity
-    guid: c4849a62ac4c94b49a3eec373fe73358
+    path: Assets/Main Files/Scenes/Levels/IntroLevel.unity
+    guid: bd6a4f597d29c4a4fa3f059a46fd17cd
+  - enabled: 1
+    path: Assets/Main Files/Scenes/Levels/FirstLevel.unity
+    guid: a71df55418cc9524b9377ece8378c66b
+  - enabled: 1
+    path: Assets/Main Files/Scenes/Levels/SecondLevel.unity
+    guid: 8dfd57338cbf16746bc4a4d90ee7d02f
+  - enabled: 1
+    path: Assets/Main Files/Scenes/Levels/ThirdLevel.unity
+    guid: 63732be8c990b1b48abe246de78a42c5
+  - enabled: 1
+    path: Assets/Main Files/Scenes/Levels/BossLevel.unity
+    guid: 4ec677ef7690c694388c71703b035cd1
   - enabled: 1
     path: Assets/Main Files/Scenes/VictoryScene.unity
     guid: 40312d7e822050c41b9c19ca86fb7823

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class camControl : MonoBehaviour
 {
@@ -26,13 +27,13 @@ public class camControl : MonoBehaviour
     {
         zoom();
         rcRotate();
-        if (Time.timeScale == 1)
+        if (SceneManager.GetActiveScene().name != "StartScene" || SceneManager.GetActiveScene().name != "OptionScene" || SceneManager.sceneCount >= 3)
         {
-            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.None;
         }
         else
         {
-            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 

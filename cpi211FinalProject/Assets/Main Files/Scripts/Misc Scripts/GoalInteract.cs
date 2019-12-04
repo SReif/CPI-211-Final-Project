@@ -11,25 +11,25 @@ public class GoalInteract : MonoBehaviour
     {
         if(other.transform.tag == "Player")
         {
+            /*
             if(victory == false)
             {
                 Time.timeScale = 0.0f;
                 SceneManager.LoadScene("VictoryScene", LoadSceneMode.Additive);
                 victory = true;
             }
-            
-
-            /*
-            if(SceneManager.GetActiveScene.name == "LastLeveL")
+            */
+            if(SceneManager.GetActiveScene().name == "BossLevel" && victory == false)
             {
-                SceneManager.LoadScene("VictoryScene");
+                Time.timeScale = 0.0f;
+                SceneManager.LoadScene("VictoryScene", LoadSceneMode.Additive);
+                victory = true;
             }
 
-            else
+            if(SceneManager.GetActiveScene().name != "BossLevel")
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
-             */
         }
     }
 }

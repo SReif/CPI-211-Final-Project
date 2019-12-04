@@ -32,7 +32,7 @@ public class SceneLoader : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("IntroScene");
     }
 
     public void Options()
