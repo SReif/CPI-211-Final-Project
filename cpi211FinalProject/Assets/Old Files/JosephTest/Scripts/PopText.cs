@@ -10,8 +10,11 @@ public class PopText : MonoBehaviour
     public Text bossStage;
     public Text gravity;
     public Text PRotation;
+
     public Image UIboss;
     public Image textBG;
+
+    public 
 
     private bool checkFinalStage = false;
     private bool counting = false;
