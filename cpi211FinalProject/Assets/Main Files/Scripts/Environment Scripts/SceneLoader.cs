@@ -17,7 +17,6 @@ public class SceneLoader : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("paused " + paused);
             if(paused)
             {
                 Resume();

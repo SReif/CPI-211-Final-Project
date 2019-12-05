@@ -26,7 +26,6 @@ public class ToggleRotate : MonoBehaviour
         if (rotateLevel.isRotating == true)
         {
             Parent(environment, transform.gameObject);
-            Debug.Log("Parented");
         }
 
         else

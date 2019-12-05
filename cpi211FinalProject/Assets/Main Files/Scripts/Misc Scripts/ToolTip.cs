@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ToolTip : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class ToolTip : MonoBehaviour
         gravityActive();
         rotateActive();
 
-        if(Input.GetKey(KeyCode.Tab))
+        if (Input.GetKey(KeyCode.Tab))
         {
             toolTip.SetActive(true);
         }else
@@ -78,6 +79,23 @@ public class ToolTip : MonoBehaviour
                 temp2.SetActive(true);
             }
         }
+
+        /*
+        if (playerGravity.gravityCount < 1)
+        {
+            temp1 = GameObject.Find("Gravity Up");
+            temp2 = GameObject.Find("Gravity Down");
+
+            temp1.SetActive(false);
+            temp2.SetActive(false);
+        }
+
+        else
+        {
+            temp1.SetActive(true);
+            temp2.SetActive(true);
+        }
+        */
     }
 
     private void rotateActive()

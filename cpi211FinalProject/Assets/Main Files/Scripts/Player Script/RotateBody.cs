@@ -21,14 +21,12 @@ public class RotateBody : MonoBehaviour
             //transform.rotation = Quaternion.Euler(0f, player.rotation.y + 90f, 0f);
             transform.Rotate(0f, 180f, 180f, Space.Self);
             canChange = true;
-            Debug.Log("ROTATED" + transform.rotation.y.ToString());
         }
         else if(Physics.gravity.y < 0 && canChange)
         {
             //transform.rotation = Quaternion.Euler(0f, player.rotation.y + 270f, 180f);
             transform.Rotate(0f, 180f, 180f, Space.Self);
             canChange = false;
-            Debug.Log("ROTATED AGAIN");
         }
     }
 }
