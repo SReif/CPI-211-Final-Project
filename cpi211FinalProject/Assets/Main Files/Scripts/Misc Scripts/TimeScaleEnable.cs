@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnlockCursor : MonoBehaviour
+public class TimeScaleEnable : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0f;
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame

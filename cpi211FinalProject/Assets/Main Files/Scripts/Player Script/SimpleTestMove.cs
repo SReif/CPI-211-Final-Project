@@ -35,6 +35,7 @@ public class SimpleTestMove : MonoBehaviour
         {
             isMoving = false;
         }
+        Debug.Log(Time.timeScale);
     }
 
     void FixedUpdate()

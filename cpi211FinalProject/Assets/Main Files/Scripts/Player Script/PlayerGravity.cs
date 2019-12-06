@@ -42,7 +42,7 @@ public class PlayerGravity : MonoBehaviour
         {
             gravityChanged = false;
         }
-        Debug.Log(gravity.y);
+        //Debug.Log(gravity.y);
     }
 
     private void OnCollisionEnter(Collision collision)
