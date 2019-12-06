@@ -598,6 +598,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5533244135231705932, guid: 6e55673a688a74d4eb2ce63369a69cf0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -269.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533244135231705932, guid: 6e55673a688a74d4eb2ce63369a69cf0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 120.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781233663570768574, guid: 6e55673a688a74d4eb2ce63369a69cf0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 7781233663132126597, guid: 6e55673a688a74d4eb2ce63369a69cf0,
         type: 3}
       propertyPath: m_Enabled
@@ -636,42 +651,47 @@ PrefabInstance:
     - target: {fileID: 7781233663570768575, guid: 6e55673a688a74d4eb2ce63369a69cf0,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 76
+      value: 113
       objectReference: {fileID: 0}
     - target: {fileID: 7781233663570768575, guid: 6e55673a688a74d4eb2ce63369a69cf0,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 13
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7781233663570768575, guid: 6e55673a688a74d4eb2ce63369a69cf0,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 14
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7781233663570768575, guid: 6e55673a688a74d4eb2ce63369a69cf0,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7781233663570768575, guid: 6e55673a688a74d4eb2ce63369a69cf0,
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7781233663570768574, guid: 6e55673a688a74d4eb2ce63369a69cf0,
+    - target: {fileID: 7781233663570768575, guid: 6e55673a688a74d4eb2ce63369a69cf0,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 308.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 5533244135231705932, guid: 6e55673a688a74d4eb2ce63369a69cf0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -269.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5533244135231705932, guid: 6e55673a688a74d4eb2ce63369a69cf0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 120.4
+      propertyPath: m_text
+      value: 'Controls:
+
+
+        [w,a,s,d] move
+
+
+        [f] interact
+
+
+        [q] rotate counterclockwise
+
+
+        [e] rotate clockwise
+
+
+        [shift] gravity shift'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e55673a688a74d4eb2ce63369a69cf0, type: 3}
@@ -804,10 +824,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4386592053355664828, guid: d1c868bfc87da114f9b6a963fca65597,
+    - target: {fileID: 4386592053886122369, guid: d1c868bfc87da114f9b6a963fca65597,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
+      propertyPath: m_AnchoredPosition.x
+      value: -390
       objectReference: {fileID: 0}
     - target: {fileID: 4386592053236783568, guid: d1c868bfc87da114f9b6a963fca65597,
         type: 3}
@@ -819,10 +839,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -390
       objectReference: {fileID: 0}
-    - target: {fileID: 4386592053886122369, guid: d1c868bfc87da114f9b6a963fca65597,
+    - target: {fileID: 4386592053355664828, guid: d1c868bfc87da114f9b6a963fca65597,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -390
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1c868bfc87da114f9b6a963fca65597, type: 3}
