@@ -12,6 +12,8 @@ public class SceneLoader : MonoBehaviour
     public static SceneLoader instance;
     private GameObject boss;
 
+    public float introSceneTimer = 180f;
+
     private void Start()
     {
         playing = false;
@@ -43,6 +45,20 @@ public class SceneLoader : MonoBehaviour
         }
 
         Sound();
+
+        if(currentLevel == "IntroScene")
+        {
+            introSceneTimer -= Time.deltaTime;
+            if(introSceneTimer <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
+
+        if(Time.timeScale == 1f)
+        {
+            paused = false;
+        }
     }
 
     public void Play()

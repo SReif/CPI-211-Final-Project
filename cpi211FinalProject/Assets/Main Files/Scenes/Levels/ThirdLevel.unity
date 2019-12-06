@@ -52325,6 +52325,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.30000025
       objectReference: {fileID: 0}
+    - target: {fileID: 2851279263563701215, guid: 3ce9c06b77eb6d349bff020dc631eb4b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851279263563701215, guid: 3ce9c06b77eb6d349bff020dc631eb4b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 008200b1938818042b2d5766bde613a9, type: 3}
 --- !u!4 &2088648062 stripped
@@ -54011,7 +54021,7 @@ Transform:
   - {fileID: 1382781122}
   - {fileID: 966397199}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4035034787215024272
 GameObject:
