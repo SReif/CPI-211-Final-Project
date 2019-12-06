@@ -24,7 +24,7 @@ public class BlockWayPoint : MonoBehaviour
         if (collision.gameObject.tag == "environment")
         {
             movementSpeed = -movementSpeed;
-            FindObjectOfType<AudioManager>().Play("Thud");
+            //FindObjectOfType<AudioManager>().Play("Thud");
         }
         if (collision.gameObject.tag == "Player")
         {
