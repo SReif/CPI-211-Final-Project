@@ -15,7 +15,10 @@ public class SceneLoader : MonoBehaviour
     private void Start()
     {
         playing = false;
-        boss = FindObjectOfType<BossMechanic>().gameObject;
+        if(SceneManager.GetActiveScene().name == "BossLevel")
+        {
+            boss = FindObjectOfType<BossMechanic>().gameObject;
+        }
     }
 
     void Update()
@@ -27,6 +30,7 @@ public class SceneLoader : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("Paused is " + paused);
             if(paused)
             {
                 Resume();
@@ -64,8 +68,12 @@ public class SceneLoader : MonoBehaviour
             Time.timeScale = 0.0f;
             paused = true;
 
-            boss.SetActive(false);
             FindObjectOfType<AudioManager>().Pause();
+
+            if (SceneManager.GetActiveScene().name == "BossLevel")
+            {
+                boss.SetActive(false);
+            }
         }
     }
 
@@ -75,8 +83,12 @@ public class SceneLoader : MonoBehaviour
         Time.timeScale = 1.0f;
         paused = false;
 
-        boss.SetActive(true);
         FindObjectOfType<AudioManager>().Pause();
+
+        if (SceneManager.GetActiveScene().name == "BossLevel")
+        {
+            boss.SetActive(true);
+        }
     }
 
     public void Menu()

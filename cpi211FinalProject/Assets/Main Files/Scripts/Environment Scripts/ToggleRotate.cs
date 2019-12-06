@@ -46,7 +46,7 @@ public class ToggleRotate : MonoBehaviour
     {
         if(other.gameObject.name != "DeathCube")
         {
-            if (other.gameObject.name == "BlueCube" && Input.GetKeyUp("f") || other.gameObject.name == "BlueCube(Clone)" && Input.GetKeyUp("f"))
+            if (other.gameObject.name == "BlueCube" && Input.GetKeyUp("f") && !switched|| other.gameObject.name == "BlueCube(Clone)" && Input.GetKeyUp("f") && !switched)
             {
                 Debug.Log("Interacting with " + other.gameObject.name);
                 rotateLevel.isCollidingOrange = false;
@@ -56,7 +56,7 @@ public class ToggleRotate : MonoBehaviour
                 ChangeCube(other.gameObject);
             }
 
-            if (other.gameObject.name == "YellowCube" && Input.GetKeyUp("f") || other.gameObject.name == "YellowCube(Clone)" && Input.GetKeyUp("f"))
+            if (other.gameObject.name == "YellowCube" && Input.GetKeyUp("f") && !switched || other.gameObject.name == "YellowCube(Clone)" && Input.GetKeyUp("f") && !switched)
             {
                 Debug.Log("Interacting with " + other.gameObject.name);
                 rotateLevel.isCollidingOrange = false;
@@ -66,7 +66,7 @@ public class ToggleRotate : MonoBehaviour
                 ChangeCube(other.gameObject);
             }
 
-            if (other.gameObject.name == "OrangeCube" && Input.GetKeyUp("f") || other.gameObject.name == "OrangeCube(Clone)" && Input.GetKeyUp("f"))
+            if (other.gameObject.name == "OrangeCube" && Input.GetKeyUp("f") && !switched || other.gameObject.name == "OrangeCube(Clone)" && Input.GetKeyUp("f") && !switched)
             {
                 Debug.Log("Interacting with " + other.gameObject.name);
                 rotateLevel.isCollidingOrange = true;
@@ -106,21 +106,21 @@ public class ToggleRotate : MonoBehaviour
             Instantiate(tempPrefab, obj.transform.position, Quaternion.identity, interactables.transform);
             Destroy(obj);
             switched = true;
-        }
 
-        if (rotateLevel.isCollidingOrange == true)
-        {
-            tempPrefab = orangeCubePrefab;
-        }
+            if (rotateLevel.isCollidingOrange == true)
+            {
+                tempPrefab = orangeCubePrefab;
+            }
 
-        if(rotateLevel.isCollidingBlue == true)
-        {
-            tempPrefab = blueCubePrefab;
-        }
+            if (rotateLevel.isCollidingBlue == true)
+            {
+                tempPrefab = blueCubePrefab;
+            }
 
-        if (rotateLevel.isCollidingYellow == true)
-        {
-            tempPrefab = yellowCubePrefab;
+            if (rotateLevel.isCollidingYellow == true)
+            {
+                tempPrefab = yellowCubePrefab;
+            }
         }
     }
 }
