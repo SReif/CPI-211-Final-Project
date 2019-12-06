@@ -44,6 +44,8 @@ public class DestroyPlayer : MonoBehaviour
             rotateFactors.counter = 0f;
             player.transform.position = spawnPoint.position;
             //canLoseLife = false;
+            player.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+            Debug.Log("Fires");
         }
     }
 
@@ -54,7 +56,7 @@ public class DestroyPlayer : MonoBehaviour
             //Destroy(other.gameObject);
             FindObjectOfType<AudioManager>().Play("Hurt");
             other.gameObject.GetComponent<HealthSystem>().health = 0;
-            Physics.gravity = gravityVector;
+            Physics.gravity = new Vector3(0f, -9.81f, 0f);//gravityVector;
         }
     }
 

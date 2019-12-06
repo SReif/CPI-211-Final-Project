@@ -23,9 +23,15 @@ public class HealthSystem : MonoBehaviour
     public Material p_Material;
 
     public Text livesDisplay;
+
+    private GameObject playerObject;
+    private Rigidbody playerRigidbody;
+    private bool died = false;
     // Start is called before the first frame update
     void Start()
     {
+        playerObject = GameObject.FindGameObjectWithTag("Player");
+        playerRigidbody = playerObject.GetComponent<Rigidbody>();
         loader = FindObjectOfType<SceneLoader>();
         health = MaxHealth;
         p_Material.SetFloat("_alpha", 1f);
@@ -37,6 +43,12 @@ public class HealthSystem : MonoBehaviour
         checkStatus();
         invincibilityFrame();
         livesDisplay.text = "Lives: " + lives.ToString();
+        if (died)
+        {
+            playerRigidbody.velocity = new Vector3(0f, 0f, 0f);
+            died = false;
+            Debug.Log("Fix momentum?");
+        }
     }
 
     public void Damage(float damageAmount)
@@ -59,7 +71,7 @@ public class HealthSystem : MonoBehaviour
                 //Instantiate(explosion, self.transform.position, self.transform.rotation);
             }
 
-            if(gameObject.tag == "Player")
+            /*if(gameObject.tag == "Player")
             {
                 if(lives <= 0)
                 {
@@ -75,6 +87,8 @@ public class HealthSystem : MonoBehaviour
                 //FindObjectOfType<SceneLoader>().Lose();
                 //Instantiate(explosion, self.transform.position, self.transform.rotation);
             }
+            died = true;*/
+           // Debug.Log("Fires");
         }
     }
 
