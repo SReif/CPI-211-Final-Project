@@ -46,5 +46,48 @@ public class AudioManager : MonoBehaviour
 
         s.source.Play();
     }
+
+    public void Stop()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s == null)
+            {
+                continue;
+            }
+
+            s.source.Stop();
+        }
+    }
+
+    public void Pause()
+    {
+        if(FindObjectOfType<SceneLoader>().paused == true)
+        {
+            foreach (Sound s in sounds)
+            {
+                if (s == null)
+                {
+                    continue;
+                }
+
+                s.source.Pause();
+            }
+        }
+
+        else
+        {
+            foreach (Sound s in sounds)
+            {
+                if (s == null)
+                {
+                    continue;
+                }
+
+                s.source.UnPause();
+            }
+        }
+        
+    }
 }
     

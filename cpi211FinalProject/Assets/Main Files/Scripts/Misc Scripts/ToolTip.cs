@@ -17,6 +17,9 @@ public class ToolTip : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        temp1 = GameObject.Find("Gravity Up");
+        temp2 = GameObject.Find("Gravity Down");
+
         toolTip.SetActive(false);
         simpleTestMove = FindObjectOfType<SimpleTestMove>();
         playerGravity = FindObjectOfType<PlayerGravity>();
@@ -52,32 +55,23 @@ public class ToolTip : MonoBehaviour
 
     private void gravityActive()
     {
-        if(playerGravity.gravityCount < 2 && playerGravity.gravityChanged)
+        if (playerGravity.gravityCount < 2 && playerGravity.gravityChanged)
         {
             if (GameObject.Find("Gravity Up"))
             {
-                temp1 = GameObject.Find("Gravity Up");
                 temp1.SetActive(false);
             }
             
             else
             {
-                temp2 = GameObject.Find("Gravity Down");
                 temp2.SetActive(false);
             }
         }
         
-        if(playerGravity.gravityCount == 2)
+        if(playerGravity.gravityCount >= 2)
         {
-            if (!temp1 || !temp2)
-            {
-                return;
-            }
-            else
-            {
-                temp1.SetActive(true);
-                temp2.SetActive(true);
-            }
+            temp1.SetActive(true);
+            temp2.SetActive(true);
         }
 
         /*
@@ -100,7 +94,7 @@ public class ToolTip : MonoBehaviour
 
     private void rotateActive()
     {
-        if(rotateLevel.isRotating == true)
+        if(rotateLevel.isRotating == true || SceneManager.GetActiveScene().name == "BossLevel")
         {
             rotate.SetActive(false);
         }else

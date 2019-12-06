@@ -72,9 +72,8 @@ public class HealthSystem : MonoBehaviour
                     //lives -= 1;
                     //loader.Retry();
                 }
-                //Instantiate(explosion, self.transform.position, self.transform.rotation);
-
                 //FindObjectOfType<SceneLoader>().Lose();
+                //Instantiate(explosion, self.transform.position, self.transform.rotation);
             }
         }
     }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RotateLevel : MonoBehaviour
 {
@@ -26,63 +27,66 @@ public class RotateLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e") && isCollidingOrange)
+        if(SceneManager.GetActiveScene().name != "BossLevel")
         {
-            if(isRotating == false)
+            if (Input.GetKeyDown("e") && isCollidingOrange)
             {
-                rotateLeft = true;
-                isRotating = true;
-                FindObjectOfType<AudioManager>().Play("Rotate");
+                if (isRotating == false)
+                {
+                    rotateLeft = true;
+                    isRotating = true;
+                    FindObjectOfType<AudioManager>().Play("Rotate");
+                }
             }
-        }
 
-        if (Input.GetKeyDown("q") && isCollidingOrange)
-        {
-            if (isRotating == false)
+            if (Input.GetKeyDown("q") && isCollidingOrange)
             {
-                rotateRight = true;
-                isRotating = true;
-                FindObjectOfType<AudioManager>().Play("Rotate");
+                if (isRotating == false)
+                {
+                    rotateRight = true;
+                    isRotating = true;
+                    FindObjectOfType<AudioManager>().Play("Rotate");
+                }
             }
-        }
 
-        if (Input.GetKeyDown("e") && isCollidingBlue)
-        {
-            if (isRotating == false)
+            if (Input.GetKeyDown("e") && isCollidingBlue)
             {
-                rotateUp = true;
-                isRotating = true;
-                FindObjectOfType<AudioManager>().Play("Rotate");
+                if (isRotating == false)
+                {
+                    rotateUp = true;
+                    isRotating = true;
+                    FindObjectOfType<AudioManager>().Play("Rotate");
+                }
             }
-        }
 
-        if (Input.GetKeyDown("q") && isCollidingBlue)
-        {
-            if (isRotating == false)
+            if (Input.GetKeyDown("q") && isCollidingBlue)
             {
-                rotateDown = true;
-                isRotating = true;
-                FindObjectOfType<AudioManager>().Play("Rotate");
+                if (isRotating == false)
+                {
+                    rotateDown = true;
+                    isRotating = true;
+                    FindObjectOfType<AudioManager>().Play("Rotate");
+                }
             }
-        }
 
-        if(Input.GetKeyDown("e") && isCollidingYellow)
-        {
-            if(isRotating == false)
+            if (Input.GetKeyDown("e") && isCollidingYellow)
             {
-                rotateClockwise = true;
-                isRotating = true;
-                FindObjectOfType<AudioManager>().Play("Rotate");
+                if (isRotating == false)
+                {
+                    rotateClockwise = true;
+                    isRotating = true;
+                    FindObjectOfType<AudioManager>().Play("Rotate");
+                }
             }
-        }
 
-        if (Input.GetKeyDown("q") && isCollidingYellow)
-        {
-            if (isRotating == false)
+            if (Input.GetKeyDown("q") && isCollidingYellow)
             {
-                rotateCounterClockwise = true;
-                isRotating = true;
-                FindObjectOfType<AudioManager>().Play("Rotate");
+                if (isRotating == false)
+                {
+                    rotateCounterClockwise = true;
+                    isRotating = true;
+                    FindObjectOfType<AudioManager>().Play("Rotate");
+                }
             }
         }
 

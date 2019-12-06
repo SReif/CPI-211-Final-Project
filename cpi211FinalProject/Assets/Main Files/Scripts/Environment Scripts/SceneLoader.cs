@@ -5,8 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public static bool paused = false;
+    public bool paused = false;
+    public bool playing;
     public string currentLevel;
+
+    public static SceneLoader instance;
+    private GameObject boss;
+
+    private void Start()
+    {
+        playing = false;
+        boss = FindObjectOfType<BossMechanic>().gameObject;
+    }
 
     void Update()
     {
@@ -27,6 +37,8 @@ public class SceneLoader : MonoBehaviour
                 Pause();
             }
         }
+
+        Sound();
     }
 
     public void Play()
@@ -51,6 +63,9 @@ public class SceneLoader : MonoBehaviour
             SceneManager.LoadScene("PauseScene", LoadSceneMode.Additive);
             Time.timeScale = 0.0f;
             paused = true;
+
+            boss.SetActive(false);
+            FindObjectOfType<AudioManager>().Pause();
         }
     }
 
@@ -59,6 +74,9 @@ public class SceneLoader : MonoBehaviour
         SceneManager.UnloadSceneAsync("PauseScene");
         Time.timeScale = 1.0f;
         paused = false;
+
+        boss.SetActive(true);
+        FindObjectOfType<AudioManager>().Pause();
     }
 
     public void Menu()
@@ -80,5 +98,40 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
         Time.timeScale = 0.0f;
+    }
+
+    private void Sound()
+    {
+        if (!playing)
+        {
+           
+            if (SceneManager.GetActiveScene().name == "StartScene")
+            {
+                FindObjectOfType<AudioManager>().Stop();
+                FindObjectOfType<AudioManager>().Play("title_background");
+                playing = true;
+            }
+
+            else if (SceneManager.GetActiveScene().name == "IntroScene")
+            {
+                FindObjectOfType<AudioManager>().Stop();
+                FindObjectOfType<AudioManager>().Play("intro_background");
+                playing = true;
+            }
+
+            else if (SceneManager.GetActiveScene().name == "BossLevel")
+            {
+                FindObjectOfType<AudioManager>().Stop();
+                FindObjectOfType<AudioManager>().Play("boss_background");
+                playing = true;
+            }
+
+            else
+            {
+                FindObjectOfType<AudioManager>().Stop();
+                FindObjectOfType<AudioManager>().Play("main_background");
+                playing = true;
+            }
+        }
     }
 }

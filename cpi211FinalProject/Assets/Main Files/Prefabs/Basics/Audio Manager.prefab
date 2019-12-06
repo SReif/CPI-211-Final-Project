@@ -86,3 +86,39 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: boss_background
+    clip: {fileID: 8300000, guid: 387645eb6e7e09247b83df541b96f34d, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: lose_background
+    clip: {fileID: 8300000, guid: 750f273f3207c8a439fff4df24b5738e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: main_background
+    clip: {fileID: 8300000, guid: d74c81c5c985dcd4687db8c22ae21c57, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: title_background
+    clip: {fileID: 8300000, guid: 8b4fee6e241d8cf4caf5d58ab9c60dd2, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: victory_background
+    clip: {fileID: 8300000, guid: 00494389f0a141e4aa1b93ab0eedfa40, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: intro_background
+    clip: {fileID: 8300000, guid: 38b833e76ecff114a84a86eb06f5c08b, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}

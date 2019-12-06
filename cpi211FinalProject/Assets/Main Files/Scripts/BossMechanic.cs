@@ -5,12 +5,14 @@ using UnityEngine;
 public class BossMechanic : MonoBehaviour
 {
     private float startTime, currentTime, minT, maxT;
-    public RotateLevel rotateLevel;
+    private RotateLevel rotateLevel;
+    public GameObject toggleRotate;
     private int rotateID;
 
     // Start is called before the first frame update
     void Start()
     {
+        rotateLevel = FindObjectOfType<RotateLevel>();
         minT = 60.0f;
         maxT = 180.0f;
 

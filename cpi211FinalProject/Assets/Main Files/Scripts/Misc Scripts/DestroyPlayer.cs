@@ -27,7 +27,7 @@ public class DestroyPlayer : MonoBehaviour
     private void Update()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        if(/*!player*/player.GetComponent<HealthSystem>().health <= 0 && loadCount == 0 && player.GetComponent<HealthSystem>().lives <= 0)
+        if(/*!player*/player.GetComponent<HealthSystem>().health <= 0 && loadCount == 0 && player.GetComponent<HealthSystem>().lives <= 1)
         {
             player.GetComponent<SimpleTestMove>().enabled = false;
             player.GetComponent<HealthSystem>().enabled = false;
@@ -52,6 +52,7 @@ public class DestroyPlayer : MonoBehaviour
         if(other.gameObject == player)
         {
             //Destroy(other.gameObject);
+            FindObjectOfType<AudioManager>().Play("Hurt");
             other.gameObject.GetComponent<HealthSystem>().health = 0;
             Physics.gravity = gravityVector;
         }
