@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tip: You can press [Tab] to bring up tool tips.'
+  m_text: 'Tip: Hold [Tab] to bring up tool tips.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1120,10 +1120,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2130509994}
-    characterCount: 47
+    characterCount: 38
     spriteCount: 0
-    spaceCount: 9
-    wordCount: 10
+    spaceCount: 7
+    wordCount: 8
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -1480,6 +1480,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7604799821165326198, guid: c6c10c5176deefd4092f47f6ec4944f7,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7604799822044986792, guid: c6c10c5176deefd4092f47f6ec4944f7,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1249.69
       objectReference: {fileID: 0}
     - target: {fileID: 7604799820397429714, guid: c6c10c5176deefd4092f47f6ec4944f7,
         type: 3}

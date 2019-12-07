@@ -232,7 +232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -225}
+  m_AnchoredPosition: {x: 200, y: -225}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &338038858
@@ -638,7 +638,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter portals to find your way out of Andromegalodon's grasp. Manipulate
     both gravity and the world itself, while avoiding all the enemies and obstacles
-    that Andromegalodon has to throw at you. Good luck Captain!
+    that Andromegalodon has to throw at you. Good luck, Captain!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0.692749, w: 0}
   m_textInfo:
     textComponent: {fileID: 1785554929}
-    characterCount: 212
+    characterCount: 213
     spriteCount: 0
     spaceCount: 33
     wordCount: 34
@@ -1456,7 +1456,10 @@ MonoBehaviour:
     Press [tab] to bring up tool tips.
 
 
-    Press [f] to interact.'
+    Press [f] to interact with colored blocks
+
+
+    Press [c] to swap camera controls.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1501,7 +1504,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 191
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1525,12 +1528,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0.692749, w: 0}
   m_textInfo:
     textComponent: {fileID: 2147001606}
-    characterCount: 178
+    characterCount: 233
     spriteCount: 0
-    spaceCount: 35
-    wordCount: 34
+    spaceCount: 45
+    wordCount: 43
     linkCount: 0
-    lineCount: 11
+    lineCount: 14
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

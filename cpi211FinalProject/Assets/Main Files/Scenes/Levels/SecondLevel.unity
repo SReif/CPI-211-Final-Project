@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -21546,6 +21546,11 @@ PrefabInstance:
       propertyPath: m_Range
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 7604799821165326198, guid: c6c10c5176deefd4092f47f6ec4944f7,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1813.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7604799821201203176, guid: c6c10c5176deefd4092f47f6ec4944f7,
         type: 3}
       propertyPath: m_Range
@@ -21565,6 +21570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Range
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7604799822044986792, guid: c6c10c5176deefd4092f47f6ec4944f7,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2513.2
       objectReference: {fileID: 0}
     - target: {fileID: 7604799822270659692, guid: c6c10c5176deefd4092f47f6ec4944f7,
         type: 3}
