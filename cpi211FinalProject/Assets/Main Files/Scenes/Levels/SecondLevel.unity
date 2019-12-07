@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -219,6 +219,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,16 +293,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -866,6 +866,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -930,16 +940,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -1359,26 +1359,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
-    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
-    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 5989806317785570932, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_Name
       value: Red Gravity Block
       objectReference: {fileID: 0}
-    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 7312518429761154151, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1435,6 +1420,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7378878303946234441, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2256,6 +2256,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2320,16 +2330,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -2933,6 +2933,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2998,16 +3008,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09930027
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3022,6 +3022,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3086,16 +3096,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -4263,6 +4263,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4327,16 +4337,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -4542,6 +4542,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4606,16 +4616,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (26)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -4851,6 +4851,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4915,16 +4925,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -5130,6 +5130,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5194,16 +5204,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -7441,6 +7441,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7505,16 +7515,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -8332,6 +8332,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8396,16 +8406,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -8917,26 +8917,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
-    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
-    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 5989806317785570932, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_Name
       value: Red Gravity Block (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 7312518429761154151, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8993,6 +8978,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7378878303946234441, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -9840,6 +9840,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9905,16 +9915,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09930027
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9935,6 +9935,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9999,16 +10009,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -10734,6 +10734,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10798,16 +10808,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (35)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -11043,26 +11043,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
-    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
-    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 5989806317785570932, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_Name
       value: Red Gravity Block (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 7312518429761154151, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11119,6 +11104,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7378878303946234441, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -11414,6 +11414,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11479,16 +11489,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09930027
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (36)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11509,6 +11509,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11578,16 +11588,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.099300206
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -12339,6 +12339,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12403,16 +12413,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -12923,6 +12923,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2011753311}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &782858728 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2851279264656342924, guid: 3ce9c06b77eb6d349bff020dc631eb4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1983273503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &783171777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12930,6 +12942,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12994,16 +13016,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -13331,6 +13343,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13395,16 +13417,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (28)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -14192,6 +14204,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14256,16 +14278,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (33)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -14563,6 +14575,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14632,16 +14654,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.099300206
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -14940,6 +14952,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15004,16 +15026,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (25)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -15771,6 +15783,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15835,16 +15857,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -15958,6 +15970,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16022,16 +16044,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -16359,6 +16371,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16423,16 +16445,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -17066,6 +17078,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 694828856502691132, guid: 0e47ce3dfba7a27429c41ed5e4e5c78d,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Manager
+      objectReference: {fileID: 0}
     - target: {fileID: 694828856502691130, guid: 0e47ce3dfba7a27429c41ed5e4e5c78d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17121,11 +17138,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 694828856502691132, guid: 0e47ce3dfba7a27429c41ed5e4e5c78d,
-        type: 3}
-      propertyPath: m_Name
-      value: Audio Manager
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e47ce3dfba7a27429c41ed5e4e5c78d, type: 3}
 --- !u!1001 &1083279323
@@ -17135,6 +17147,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17199,16 +17221,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -17996,6 +18008,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3022180690751923420}
     m_Modifications:
+    - target: {fileID: 326151971569376103, guid: 7e85f7452afe09944b03a8b5d55531ba,
+        type: 3}
+      propertyPath: m_Name
+      value: SpawnPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 186899808683861751, guid: 7e85f7452afe09944b03a8b5d55531ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18050,11 +18067,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 326151971569376103, guid: 7e85f7452afe09944b03a8b5d55531ba,
-        type: 3}
-      propertyPath: m_Name
-      value: SpawnPoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e85f7452afe09944b03a8b5d55531ba, type: 3}
@@ -18531,16 +18543,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
-    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
-    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 5989806317785570932, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_Name
@@ -18551,11 +18553,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 7312518429761154151, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18616,6 +18613,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2a99b63d9c24b34b8e8b0a4411cc449, type: 3}
 --- !u!4 &1209846895 stripped
@@ -18631,6 +18643,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18696,16 +18718,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09930027
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -18726,6 +18738,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18790,16 +18812,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (40)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -18913,6 +18925,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18977,16 +18999,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -19192,6 +19204,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19257,16 +19279,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09930027
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (29)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19287,6 +19299,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19352,16 +19374,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09930027
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19382,6 +19394,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19446,16 +19468,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -19582,6 +19594,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19646,16 +19668,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -20013,6 +20025,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20077,16 +20099,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (24)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -20322,6 +20334,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20386,16 +20408,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (41)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -20509,6 +20521,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20573,16 +20595,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -21486,6 +21498,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21550,16 +21572,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -24491,6 +24503,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24555,16 +24577,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (27)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -29900,6 +29912,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29964,16 +29986,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (32)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -30363,6 +30375,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30428,16 +30450,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09930027
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -30488,6 +30500,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30552,16 +30574,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (38)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -31875,6 +31887,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31939,16 +31961,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -32428,6 +32440,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32493,16 +32515,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09930027
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (31)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -32553,6 +32565,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32617,16 +32639,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (37)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -32954,6 +32966,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33018,16 +33040,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -33417,6 +33429,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33481,16 +33503,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -33934,6 +33946,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33999,16 +34021,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.09930027
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -34029,6 +34041,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34093,16 +34115,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -34216,6 +34228,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34280,16 +34302,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (34)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -34739,6 +34751,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34803,16 +34825,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (39)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -35220,6 +35232,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008143541}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2010807717 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7732789240823283518, guid: ff4ea57f7239b32438998e4c24f96daf,
+    type: 3}
+  m_PrefabInstance: {fileID: 929029238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3664df8394e9f2848bbf3919e5200b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2011753311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35227,6 +35251,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35297,16 +35331,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.099300206
       objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -35321,6 +35345,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35385,16 +35419,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -35502,16 +35526,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
-    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
-    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 5989806317785570932, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_Name
@@ -35522,11 +35536,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
     - target: {fileID: 7312518429761154151, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35583,6 +35592,21 @@ PrefabInstance:
       value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 7378878303946234441, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 5524283320761228365, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 6530495205579361177, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 143a481b29c720648a069bd8e2a705cd, type: 2}
+    - target: {fileID: 3373344813658918860, guid: c2a99b63d9c24b34b8e8b0a4411cc449,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -36392,6 +36416,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5890299377649461724}
     m_Modifications:
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Spikes (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1607119535215535276, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36456,16 +36490,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09930027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_Name
-      value: Red Spikes (30)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2312311896747415231, guid: 4d96a5adce069c5489a5df42fedf8267,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4047097137867530851, guid: 4d96a5adce069c5489a5df42fedf8267,
         type: 3}
@@ -36567,11 +36591,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Captain Cube 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1062697142892637675, guid: 5115c2c9ed3ef2d4cae2d66b64260de9,
-        type: 3}
-      propertyPath: livesDisplay
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4099450708769038326, guid: 5115c2c9ed3ef2d4cae2d66b64260de9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36627,6 +36646,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1062697142892637675, guid: 5115c2c9ed3ef2d4cae2d66b64260de9,
+        type: 3}
+      propertyPath: livesDisplay
+      value: 
+      objectReference: {fileID: 782858728}
     - target: {fileID: 4857987557396647592, guid: 5115c2c9ed3ef2d4cae2d66b64260de9,
         type: 3}
       propertyPath: interactables
@@ -37259,30 +37283,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3022180690751923420}
     m_Modifications:
-    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
+    - target: {fileID: 1506650917819702527, guid: c81886d4530d5bb438872194116bddb5,
         type: 3}
-      propertyPath: rotateFactors
-      value: 
-      objectReference: {fileID: 5871322514989815041, guid: dd017f9e7d93dd24893fbaa70442f01e,
-        type: 3}
-    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
-        type: 3}
-      propertyPath: stage
-      value: 
-      objectReference: {fileID: 3022180689415417592, guid: dd017f9e7d93dd24893fbaa70442f01e,
-        type: 3}
-    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
-        type: 3}
-      propertyPath: loader
-      value: 
-      objectReference: {fileID: 305179229768596583, guid: dd017f9e7d93dd24893fbaa70442f01e,
-        type: 3}
-    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
-        type: 3}
-      propertyPath: spawnPoint
-      value: 
-      objectReference: {fileID: 186899808683861751, guid: 7e85f7452afe09944b03a8b5d55531ba,
-        type: 3}
+      propertyPath: m_Name
+      value: DeathCube
+      objectReference: {fileID: 0}
     - target: {fileID: 1506650917819702403, guid: c81886d4530d5bb438872194116bddb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -37353,11 +37358,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 75
       objectReference: {fileID: 0}
-    - target: {fileID: 1506650917819702527, guid: c81886d4530d5bb438872194116bddb5,
+    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
         type: 3}
-      propertyPath: m_Name
-      value: DeathCube
-      objectReference: {fileID: 0}
+      propertyPath: rotateFactors
+      value: 
+      objectReference: {fileID: 5871322514177531685}
+    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
+        type: 3}
+      propertyPath: stage
+      value: 
+      objectReference: {fileID: 3022180690751923420}
+    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
+        type: 3}
+      propertyPath: loader
+      value: 
+      objectReference: {fileID: 2010807717}
+    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1177725213}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c81886d4530d5bb438872194116bddb5, type: 3}
 --- !u!4 &5809993252493442695 stripped
