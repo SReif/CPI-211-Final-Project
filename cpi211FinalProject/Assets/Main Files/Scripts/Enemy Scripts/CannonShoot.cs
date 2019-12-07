@@ -29,7 +29,7 @@ public class CannonShoot : MonoBehaviour
     {
         GameObject instBullet = Instantiate(CannonBall, CannonEmitter.position,CannonEmitter.transform.rotation) as GameObject;
         instBullet.GetComponent<Rigidbody>().AddForce(CannonEmitter.transform.up * cannonSpeed);
-        Destroy(instBullet, 5);
+        Destroy(instBullet, 10);
         FindObjectOfType<AudioManager>().Play("Shoot");
     }
 }

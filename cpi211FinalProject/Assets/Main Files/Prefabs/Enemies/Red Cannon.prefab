@@ -92,23 +92,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1274268202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8582862157977616288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 222f158d5416b4791bca5cbebd760dd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CannonEmitter: {fileID: 1304752930}
-  CannonBall: {fileID: 1134144058388049184, guid: 2ca894ed3e3c07a44a56fddefc87744d,
-    type: 3}
-  cannonSpeed: 100
-  shotTime: 120
 --- !u!64 &127724185
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -137,6 +120,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 1019386347547055254, guid: c4d42b3be8b404ffa97c19161a12f18a, type: 3}
+--- !u!114 &1274268202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8582862157977616288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222f158d5416b4791bca5cbebd760dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CannonEmitter: {fileID: 1304752930}
+  CannonBall: {fileID: 1134144058388049184, guid: 2ca894ed3e3c07a44a56fddefc87744d,
+    type: 3}
+  cannonSpeed: 360
+  shotTime: 180
 --- !u!1001 &305574892041578153
 PrefabInstance:
   m_ObjectHideFlags: 0

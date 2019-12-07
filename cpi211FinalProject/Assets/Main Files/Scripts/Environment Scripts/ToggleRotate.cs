@@ -36,7 +36,8 @@ public class ToggleRotate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (floatingTextPrefab && !FindObjectOfType<FloatingText>() && other.gameObject.name != "DeathCube" && other.gameObject.name != "DeathPanel" && other.gameObject.name != "Portal")
+        if(other.gameObject.name == "YellowCube" || other.gameObject.name == "YellowCube(Clone)" || other.gameObject.name == "BlueCube" || other.gameObject.name == "BlueCube(Clone)" || other.gameObject.name == "OrangeCube" || other.gameObject.name == "OrangeCube(Clone)")
+        if (floatingTextPrefab && !FindObjectOfType<FloatingText>())
         {
             ShowFloatingText("[F] Interact", other.transform);
         }
