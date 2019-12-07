@@ -30,7 +30,7 @@ public class SceneLoader : MonoBehaviour
             currentLevel = SceneManager.GetActiveScene().name;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "StartScene" && SceneManager.GetActiveScene().name != "OptionScene" && SceneManager.GetActiveScene().name != "IntroScene")
         {
             Debug.Log("Paused is " + paused);
             if(paused)
@@ -98,6 +98,7 @@ public class SceneLoader : MonoBehaviour
         SceneManager.UnloadSceneAsync("PauseScene");
         Time.timeScale = 1.0f;
         paused = false;
+       // playing = false;
 
         FindObjectOfType<AudioManager>().Pause();
 
