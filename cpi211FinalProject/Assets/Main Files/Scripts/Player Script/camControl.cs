@@ -27,13 +27,21 @@ public class camControl : MonoBehaviour
     {
         zoom();
         rcRotate();
-        if (SceneManager.GetActiveScene().name != "StartScene" || SceneManager.GetActiveScene().name != "OptionScene" || SceneManager.sceneCount >= 3)
+        /*if (SceneManager.GetActiveScene().name == "StartScene" || SceneManager.GetActiveScene().name == "OptionScene") //|| SceneManager.sceneCount >= 3)
         {
             Cursor.lockState = CursorLockMode.None;
         }
-        else
+        else if(Time.timeScale != 0f)
         {
             Cursor.lockState = CursorLockMode.Locked;
+        }*/
+        if (Time.timeScale == 1)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
@@ -64,15 +72,15 @@ public class camControl : MonoBehaviour
         frRotationAxis = -(camF + camR);
 
         //rotates on right mouse down
-        if (Input.GetMouseButton(1))
-        {
+        //if (Input.GetMouseButton(1))
+        //{
             offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * rotSpeed, Vector3.up) * offset;
 
             /*If the camera is facing in the same direction as vector3.right, set the reference vector to vector3.forward.
              If the camera is facing in the same direction as vector3.forward, set the reference vector to vector3.right.*/
             offset = Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * rotSpeed, frRotationAxis) * offset;
 
-        }
+        //}
         cam.transform.position = transform.position + offset;
         cam.transform.LookAt(transform.position);
     }

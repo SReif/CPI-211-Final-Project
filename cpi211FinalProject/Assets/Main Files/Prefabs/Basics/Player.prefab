@@ -30,8 +30,10 @@ GameObject:
   - component: {fileID: 8475487855707970110}
   - component: {fileID: 8475487855707970052}
   - component: {fileID: 4857987557396647592}
+  - component: {fileID: 2103695169757317398}
+  - component: {fileID: 6051945707825125876}
   m_Layer: 0
-  m_Name: Captain Cube 1
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,6 +53,7 @@ Transform:
   - {fileID: 1446621562163013528}
   - {fileID: 8475487856536973371}
   - {fileID: 3523028229445816049}
+  - {fileID: 7374051431326339273}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -211,11 +214,120 @@ MonoBehaviour:
     type: 3}
   yellowCubePrefab: {fileID: 5238497641383583345, guid: 11344449013211c49b29f684c0e298f3,
     type: 3}
-  rotateLevel: {fileID: 5871322514989815041, guid: dd017f9e7d93dd24893fbaa70442f01e,
-    type: 3}
-  environment: {fileID: 4419101390010270454, guid: dd017f9e7d93dd24893fbaa70442f01e,
-    type: 3}
   switched: 0
+--- !u!114 &2103695169757317398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062697142892637669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1857b80a0705514085cf5c514523875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 2611884274613921927}
+--- !u!114 &6051945707825125876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062697142892637669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d04e29c978f4842a5a7fdd20b3c2d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSwapped: 0
+  camera1: {fileID: 8475487855409430014}
+  camera2: {fileID: 4301222307373194525}
+  camControl1: {fileID: 8475487855409430010}
+  camControl2: {fileID: 2103695169757317398}
+--- !u!1 &4301222307373194525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7374051431326339273}
+  - component: {fileID: 2611884274613921927}
+  - component: {fileID: 536928530162661656}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7374051431326339273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301222307373194525}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.29516995, z: -28.3}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 4099450708769038326}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &2611884274613921927
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301222307373194525}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &536928530162661656
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301222307373194525}
+  m_Enabled: 1
 --- !u!1 &6856454729695340245
 GameObject:
   m_ObjectHideFlags: 0
