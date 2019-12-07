@@ -21,13 +21,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Captain Cube
-  m_Shader: {fileID: -6465566751694194690, guid: c8a1e3a3c8c20bd4f9741bba824eb223,
+  m_Shader: {fileID: -6465566751694194690, guid: 81b3755474f44424ca616f5481b1133d,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3050
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
