@@ -89,5 +89,18 @@ public class AudioManager : MonoBehaviour
         }
         
     }
+
+    public void UnPause()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s == null)
+            {
+                continue;
+            }
+
+            s.source.UnPause();
+        }
+    }
 }
     

@@ -98,9 +98,10 @@ public class SceneLoader : MonoBehaviour
         SceneManager.UnloadSceneAsync("PauseScene");
         Time.timeScale = 1.0f;
         paused = false;
-       // playing = false;
+        // playing = false;
 
-        FindObjectOfType<AudioManager>().Pause();
+        //FindObjectOfType<AudioManager>().Pause();
+        FindObjectOfType<AudioManager>().UnPause();
 
         if (SceneManager.GetActiveScene().name == "BossLevel")
         {
