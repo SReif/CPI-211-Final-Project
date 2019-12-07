@@ -58,7 +58,7 @@ public class BossText : MonoBehaviour
             canPopText = true;
             pulsing = false;
         }
-        Debug.Log(pulseCount);
+
         if (checkFinalStage == false)                            //check boss scene so it only run ones
         {
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BossLevel"))    // check for scene name
@@ -89,7 +89,7 @@ public class BossText : MonoBehaviour
             checkRotate = false;
         }
 
-        Debug.Log(randomNum);
+        Debug.Log("Random num" + randomNum);
         if (counting == false && pulsing == false)
         {
             if (randomNum == 1)                              // 
