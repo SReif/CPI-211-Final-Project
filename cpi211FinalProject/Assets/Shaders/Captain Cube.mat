@@ -21,18 +21,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Captain Cube
-  m_Shader: {fileID: -6465566751694194690, guid: 81b3755474f44424ca616f5481b1133d,
+  m_Shader: {fileID: -6465566751694194690, guid: c8a1e3a3c8c20bd4f9741bba824eb223,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3050
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_113CDB79:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_CBEE85DA:
         m_Texture: {fileID: 2800000, guid: 5a7fbaa734a17ee43a5e77733d929e4f, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -96,4 +100,4 @@ Material:
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
+    - _color: {r: 0, g: 0, b: 0, a: 1}
