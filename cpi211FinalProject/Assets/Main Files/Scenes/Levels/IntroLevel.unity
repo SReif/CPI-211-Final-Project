@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: 58a979c0bb3dad64a801ea735ecf7b1e,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -331,11 +331,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3022180689876565577}
     m_Modifications:
-    - target: {fileID: 326151971569376103, guid: 7e85f7452afe09944b03a8b5d55531ba,
-        type: 3}
-      propertyPath: m_Name
-      value: SpawnPoint
-      objectReference: {fileID: 0}
     - target: {fileID: 186899808683861751, guid: 7e85f7452afe09944b03a8b5d55531ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -390,6 +385,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326151971569376103, guid: 7e85f7452afe09944b03a8b5d55531ba,
+        type: 3}
+      propertyPath: m_Name
+      value: SpawnPoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e85f7452afe09944b03a8b5d55531ba, type: 3}
@@ -462,7 +462,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9977dd59f1c05ba4bb455069cefa6bbd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -504,11 +504,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 694828856502691132, guid: 0e47ce3dfba7a27429c41ed5e4e5c78d,
-        type: 3}
-      propertyPath: m_Name
-      value: Audio Manager
-      objectReference: {fileID: 0}
     - target: {fileID: 694828856502691130, guid: 0e47ce3dfba7a27429c41ed5e4e5c78d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -563,6 +558,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 694828856502691132, guid: 0e47ce3dfba7a27429c41ed5e4e5c78d,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Manager
       objectReference: {fileID: 0}
     - target: {fileID: 694828856502691133, guid: 0e47ce3dfba7a27429c41ed5e4e5c78d,
         type: 3}
@@ -674,6 +674,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Captain Cube 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1062697142892637675, guid: 5115c2c9ed3ef2d4cae2d66b64260de9,
+        type: 3}
+      propertyPath: livesDisplay
+      value: 
+      objectReference: {fileID: 910564780}
     - target: {fileID: 4099450708769038326, guid: 5115c2c9ed3ef2d4cae2d66b64260de9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -729,11 +734,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1062697142892637675, guid: 5115c2c9ed3ef2d4cae2d66b64260de9,
-        type: 3}
-      propertyPath: livesDisplay
-      value: 
-      objectReference: {fileID: 910564780}
     - target: {fileID: 4857987557396647592, guid: 5115c2c9ed3ef2d4cae2d66b64260de9,
         type: 3}
       propertyPath: interactables
@@ -954,7 +954,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9977dd59f1c05ba4bb455069cefa6bbd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1275,11 +1275,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3022180689876565577}
     m_Modifications:
-    - target: {fileID: 1506650917819702527, guid: c81886d4530d5bb438872194116bddb5,
+    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
         type: 3}
-      propertyPath: m_Name
-      value: DeathCube
-      objectReference: {fileID: 0}
+      propertyPath: rotateFactors
+      value: 
+      objectReference: {fileID: 5871322514511955376}
+    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
+        type: 3}
+      propertyPath: stage
+      value: 
+      objectReference: {fileID: 3022180689876565577}
+    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
+        type: 3}
+      propertyPath: loader
+      value: 
+      objectReference: {fileID: 176651339}
+    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
+        type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 286460474}
     - target: {fileID: 1506650917819702403, guid: c81886d4530d5bb438872194116bddb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1335,30 +1350,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
-        type: 3}
-      propertyPath: rotateFactors
-      value: 
-      objectReference: {fileID: 5871322514511955376}
-    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
-        type: 3}
-      propertyPath: stage
-      value: 
-      objectReference: {fileID: 3022180689876565577}
-    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
-        type: 3}
-      propertyPath: loader
-      value: 
-      objectReference: {fileID: 176651339}
-    - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
-        type: 3}
-      propertyPath: spawnPoint
-      value: 
-      objectReference: {fileID: 286460474}
     - target: {fileID: 1506650917819702525, guid: c81886d4530d5bb438872194116bddb5,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1506650917819702527, guid: c81886d4530d5bb438872194116bddb5,
+        type: 3}
+      propertyPath: m_Name
+      value: DeathCube
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c81886d4530d5bb438872194116bddb5, type: 3}
