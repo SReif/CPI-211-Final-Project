@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GoalInteract : MonoBehaviour
 {
-    private bool victory;
+    public bool victory;
     private SceneLoader sceneLoader;
 
     void Start()
@@ -30,6 +30,7 @@ public class GoalInteract : MonoBehaviour
                 FindObjectOfType<BossMechanic>().gameObject.SetActive(false);
                 Time.timeScale = 0.0f;
                 SceneManager.LoadScene("VictoryScene", LoadSceneMode.Additive);
+                FindObjectOfType<AudioManager>().Stop();
                 FindObjectOfType<AudioManager>().Play("victory_background");
                 victory = true;
             }

@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -35738,6 +35738,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3022180688883597486}
     m_Modifications:
+    - target: {fileID: 326151971569376103, guid: 7e85f7452afe09944b03a8b5d55531ba,
+        type: 3}
+      propertyPath: m_Name
+      value: SpawnPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 186899808683861751, guid: 7e85f7452afe09944b03a8b5d55531ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35792,11 +35797,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 326151971569376103, guid: 7e85f7452afe09944b03a8b5d55531ba,
-        type: 3}
-      propertyPath: m_Name
-      value: SpawnPoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e85f7452afe09944b03a8b5d55531ba, type: 3}
@@ -55664,6 +55664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3022180688883597486}
   - component: {fileID: 5871322515530185559}
+  - component: {fileID: 4419101390541565089}
   m_Layer: 0
   m_Name: Environment
   m_TagString: environment
@@ -55671,6 +55672,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4419101390541565089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4419101390541565088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc6c04f2b4ec2941995e0846ecc86a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4871051617130177344
 GameObject:
   m_ObjectHideFlags: 0
@@ -55694,6 +55707,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3022180688883597486}
     m_Modifications:
+    - target: {fileID: 1506650917819702527, guid: c81886d4530d5bb438872194116bddb5,
+        type: 3}
+      propertyPath: m_Name
+      value: DeathCube
+      objectReference: {fileID: 0}
     - target: {fileID: 1506650917819702403, guid: c81886d4530d5bb438872194116bddb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -55763,11 +55781,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1506650917819702527, guid: c81886d4530d5bb438872194116bddb5,
-        type: 3}
-      propertyPath: m_Name
-      value: DeathCube
       objectReference: {fileID: 0}
     - target: {fileID: 1506650917819702400, guid: c81886d4530d5bb438872194116bddb5,
         type: 3}

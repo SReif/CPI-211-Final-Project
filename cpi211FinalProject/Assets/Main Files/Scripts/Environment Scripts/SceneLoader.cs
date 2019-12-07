@@ -14,6 +14,8 @@ public class SceneLoader : MonoBehaviour
 
     public float introSceneTimer = 180f;
 
+    public GoalInteract victoryCondition;
+
     private void Start()
     {
         playing = false;
@@ -114,6 +116,7 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("StartScene");
         Time.timeScale = 1.0f;
         paused = false;
+        victoryCondition.victory = false;
     }
 
     public void Retry()
@@ -122,6 +125,7 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentLevel);
         Time.timeScale = 1.0f;
         paused = false;
+        victoryCondition.victory = false;
     }
 
     public void Lose()
@@ -149,18 +153,19 @@ public class SceneLoader : MonoBehaviour
                 playing = true;
             }
 
-            else if (SceneManager.GetActiveScene().name == "BossLevel")
+            else if (SceneManager.GetActiveScene().name == "BossLevel" && !victoryCondition.victory)
             {
                 FindObjectOfType<AudioManager>().Stop();
                 FindObjectOfType<AudioManager>().Play("boss_background");
                 playing = true;
             }
 
-            else
+            else 
             {
                 FindObjectOfType<AudioManager>().Stop();
                 FindObjectOfType<AudioManager>().Play("main_background");
                 playing = true;
+                Debug.Log("Firing");
             }
         }
     }
